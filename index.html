@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JqueryPromotion</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
 
@@ -14,16 +14,25 @@
 
 <body>
 
-    <article class="hero-image" style="--hero-image: url('../images/jquery.png'); --hero-attachment: fixed;">
-        <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0, 0, 0, 0.5);;">
+    <article class="hero-image">
+        <aside class="hero-image-opacity">
             <div class="hero-image-content">
-                <h2 class="hero-image-title" style="--hero-text-color: white;">
-                    jQUERY
+                <h2 class="hero-image-title">
+                    <img id="fotosola" src="images/logosolo.png" alt="">jQuery
                 </h2>
-                <a href="#click" class="btn">CLICK ME</a>
+                <a href="#click" class="popup_open btn">CLICK ME</a>
             </div>
         </aside>
     </article>
+    <div><img id="fotosola" src="https://picsum.photos/200" alt=""></div>
+
+    <section id="popup">
+        <img src="images/Logo_jQuery.svg.png" alt="">
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+    </section>
+
+
+
     <div class="container">
         <h2>Jquery, Wat is het?</h2>
         <div id="accordion">
@@ -81,14 +90,28 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
 
 <script>
     $(document).ready(function () {
         $("#accordion").accordion({
-            icons: { "header": "ui-icon-plus" },
+            icons: {
+                "header": "ui-icon-plus"
+            },
             active: false,
             collapsible: true
         });
+
+        $('#popup').popup({
+            pagecontainer: 'body',
+            escape: true, // closes the popup when esc key pressed
+            transition: 'all 2.0s',
+            blur: true, //false prevent closing with click
+        });
+
+        $("#fotosola").animate({
+            left: "0px"
+        }, 1500);
     });
 </script>
 </body>
