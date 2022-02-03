@@ -6,12 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+
 </head>
 
 <body>
-    <p>Beginning</p>
-    <h1></h1>
-</body>
+    <div class="container">
+        <h2>Jquery, Wat is het?</h2>
+        <div id="accordion">
+            <h3>Betekenis: JQuery</h3>
+            <div>
+                <p>jQuery is een framework voor JavaScript dat het makkelijker maakt om interactieve en dynamische
+                    websites
+                    te bouwen. Met relatief weinig scriptcode kan een ontwikkelaar bepaalde functionaliteit programmeren
+                    die
+                    in principe in elke browser zal werken.</p>
 
-</html>
+                <p>jQuery maakt het makkelijker om gebruik te maken van het Document Object Model (DOM) van
+                    HTML-documenten, gebeurtenissen (events) af te handelen, animaties toe te passen, css te manipuleren
+                    en
+                    te communiceren met de webserver door middel van Ajax. De basis van de library is naar wens uit te
+                    breiden met diverse plug-ins.</p>
+            </div>
+            <h3>Waar wordt jQuery voor gebruikt?</h3>
+            <div>
+                <p>jQuery is een framework gebouwd met JavaScript. Het helpt webontwikkelaars om extra functionaliteiten
+                    aan
+                    hun websites toe te voegen. Het is de meest populaire JavaScript-bibliotheek die wordt gebruikt om
+                    de
+                    HTML DOM-boom te doorkruisen en te manipuleren. Het vereenvoudigt ook de afhandeling van
+                    gebeurtenissen,
+                    CSS-animatie en Ajax</p>
+            </div>
+            <h3>jQuery-plug-ins?</h3>
+            <div>
+                <p>Een jQuery-plug-in is een methode die we gebruiken om het prototype-object van jQuery uit te breiden.
+                    Het is een stukje code dat is geschreven in een JavaScript-bestand, waardoor alle jQuery-objecten
+                    alle
+                    methoden die u toevoegt, kunnen erven. ... Het vereenvoudigt en standaardiseert interacties tussen
+                    JavaScript-code en HTML-elementen.</p>
+                <h4>Voorbeelden van plugins</h4>
+                <ul>
+                    <li>Slider voor foto's</li>
+                    <li>formulier plug-ins</li>
+                    <li>Animaties</li>
+                    <li>En zoveel meer</li>
+                </ul>
+            </div>
+            <h3>jQuery AJAX?</h3>
+            <div>
+                <p>AJAX staat voor "Asynchronous JavaScript en XML". Ajax gaat over het gebruik van deze mogelijkheid
+                    van
+                    JavaScript om een asynchroon http-verzoek te verzenden en de XML-gegevens als antwoord te krijgen
+                    (ook
+                    in andere formaten) en het deel van een webpagina bij te werken (met JavaScript) zonder de hele
+                    webpagina opnieuw te laden of te vernieuwen</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#accordion").accordion({
+                icons: { "header": "ui-icon-plus" },
+                active: false,
+                collapsible: true
+            });
+        });
+    </script>
+</body>
