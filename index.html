@@ -6,12 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <p>Beginning</p>
-    <h1></h1>
+    <article class="hero-image" style="--hero-image: url('../images/jquery.png'); --hero-attachment: fixed;">
+        <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0, 0, 0, 0.5);;">
+            <div class="hero-image-content">
+                <h2 class="hero-image-title" style="--hero-text-color: white;">
+                    jQUERY
+                </h2>
+                <a href="#click" class="btn">CLICK ME</a>
+            </div>
+        </aside>
+    </article>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
 </body>
 
 </html>
