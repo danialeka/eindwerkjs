@@ -20,7 +20,7 @@
                 <h2 class="hero-image-title">
                     <img id="fotosola" src="images/logosolo.png" alt="">jQuery
                 </h2>
-                <a href="#click" class="popup_open btn">CLICK ME</a>
+                <a href="#" class="popup_open btn">CLICK ME</a>
             </div>
         </aside>
     </article>
@@ -28,7 +28,7 @@
 
     <section id="popup">
         <img src="images/Logo_jQuery.svg.png" alt="">
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+
     </section>
 
 
@@ -87,7 +87,7 @@
     </div>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
@@ -109,9 +109,18 @@
             blur: true, //false prevent closing with click
         });
 
-        $("#fotosola").animate({
+        $("#fotosola").animate({ //logo comes from the left
             left: "0px"
         }, 1500);
+
+
+        $(".btn").delay(1400).effect("shake", { //shake the botton with delay of 1.4s
+            times: 2,
+            distance: 10,
+
+        }, 500);
+
+
     });
 </script>
 </body>
