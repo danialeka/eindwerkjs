@@ -5,23 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JqueryPromotion</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link href="css/jquery-gallery.css" rel="stylesheet">
 </head>
 
 <body>
-    <article class="hero-image" style="--hero-image: url('../images/jquery.png'); --hero-attachment: fixed;">
-        <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0, 0, 0, 0.5);;">
+    <article class="hero-image">
+        <aside class="hero-image-opacity">
             <div class="hero-image-content">
-                <h2 class="hero-image-title" style="--hero-text-color: white;">
-                    jQUERY
+                <h2 class="hero-image-title">
+                    <img id="fotosola" src="images/logosolo.png" alt="">jQuery
                 </h2>
-                <a href="#click" class="btn">CLICK ME</a>
+                <a href="#" class="popup_open btn">CLICK ME</a>
             </div>
         </aside>
     </article>
+    <div><img id="fotosola" src="https://picsum.photos/200" alt=""></div>
+
+    <section id="popup">
+        <img src="images/Logo_jQuery.svg.png" alt="">
+
+    </section>
+
+
+
     <div class="container">
         <div class="box-container clearfix">
             <div>
@@ -79,62 +88,82 @@
                 </div>
             </div>
         </div>
-    </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+        </script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="dist/jquery.random-fade-in.js"></script>
+        <script src="js/jquery-gallery.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+        <script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="dist/jquery.random-fade-in.js"></script>
-    <script src="js/jquery-gallery.js"></script>
-    <script>
-        $(document).ready(function () {
-            //begin code Christof//
-            $("div.inhoud-1").load("inhoud/tekst1.txt");
-            $("div.inhoud-2").load("inhoud/tekst2.txt");
-            $("div.inhoud-3").load("inhoud/tekst3.txt");
-            $("div.inhoud-4").load("inhoud/tekst4.txt");
+            $(document).ready(function () {
+                //begin code Christof//
+                $("div.inhoud-1").load("inhoud/tekst1.txt");
+                $("div.inhoud-2").load("inhoud/tekst2.txt");
+                $("div.inhoud-3").load("inhoud/tekst3.txt");
+                $("div.inhoud-4").load("inhoud/tekst4.txt");
 
-            $('.box-container').randomFadeIn('slow');
-            $("#accordion").accordion({
-                icons: { "header": "ui-icon-circle-triangle-s", "activeHeader": "ui-icon-circle-triangle-n" },
-                active: false,
-                collapsible: true
-            });
-
-            $(".show_hide").css("display", "none");
-            $("#knop").on('click', function () {
-                $(".show_hide").toggle(500);
-            });
-
-            $(function () {
-                $('.gallery-slideshow').slideshow({
-                    interval: 1500,
-                    width: 400,
-                    height: 300
+                $('.box-container').randomFadeIn('slow');
+                $("#accordion").accordion({
+                    icons: { "header": "ui-icon-circle-triangle-s", "activeHeader": "ui-icon-circle-triangle-n" },
+                    active: false,
+                    collapsible: true
                 });
-            });
 
-            $('#content1').on('click', function () {
-                getContent('data/content1.html');
-            });
-            function getContent(file) {
-                $.ajax({
-                    url: file,
-                    type: 'GET',
-                    dataType: 'html',
-                    success: function (data, textStatus, xhr) {
-                        $('#contentarea').html(data);
-                    },
-                    error: function (xhr, textStatus, errorThrown) {
-                        $('#contentarea').html(textStatus);
-                    }
+                $(".show_hide").css("display", "none");
+                $("#knop").on('click', function () {
+                    $(".show_hide").toggle(500);
                 });
-            }
 
-            //einde code Christof//
+                $(function () {
+                    $('.gallery-slideshow').slideshow({
+                        interval: 1500,
+                        width: 400,
+                        height: 300
+                    });
+                });
+
+                $('#content1').on('click', function () {
+                    getContent('data/content1.html');
+                });
+                function getContent(file) {
+                    $.ajax({
+                        url: file,
+                        type: 'GET',
+                        dataType: 'html',
+                        success: function (data, textStatus, xhr) {
+                            $('#contentarea').html(data);
+                        },
+                        error: function (xhr, textStatus, errorThrown) {
+                            $('#contentarea').html(textStatus);
+                        }
+                    });
+                }
+
+                //einde code Christof//
+                $('#popup').popup({
+                    pagecontainer: 'body',
+                    escape: true, // closes the popup when esc key pressed
+                    transition: 'all 2.0s',
+                    blur: true, //false prevent closing with click
+                });
+
+                $("#fotosola").animate({ //logo comes from the left
+                    left: "0px"
+                }, 1500);
+
+
+                $(".btn").delay(1400).effect("shake", { //shake the botton with delay of 1.4s
+                    times: 2,
+                    distance: 10,
+
+                }, 500);
 
 
 
-        });
-    </script>
+            });
+        </script>
+
 </body>
