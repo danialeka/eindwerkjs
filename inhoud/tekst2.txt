@@ -1,0 +1,7 @@
+<p>jQuery is een framework gebouwd met JavaScript. Het helpt webontwikkelaars om extra functionaliteiten
+aan
+hun websites toe te voegen. Het is de meest populaire JavaScript-bibliotheek die wordt gebruikt om
+de
+HTML DOM-boom te doorkruisen en te manipuleren. Het vereenvoudigt ook de afhandeling van
+gebeurtenissen,
+CSS-animatie en Ajax</p>

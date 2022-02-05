@@ -5,6 +5,79 @@ body{
 .container{
     width: 900px;
     margin: auto;
+    margin-top: 80px;
+}
+
+.gallery-slideshow img {
+    width: 400px;
+    height: 300px;
+}
+
+#accordion li {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#knop, #content1 {
+    border-radius: 0.5rem;
+    background-color: green;
+    cursor: pointer;
+}
+
+.box-container {
+    width: 450px;
+    margin: auto;
+}
+
+.box-container div {
+    float: left;
+    height: 50px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    overflow: hidden;
+    width: 50px;
+}
+
+.box-container div p {
+    box-sizing: border-box;
+    color: #fff;
+    display: none;
+    font-size: 20px;
+    height: 100%;
+    margin: 0;
+    padding-top: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.box-container div:nth-child(1) {
+    background: red;
+}
+
+.box-container div:nth-child(2) {
+    background: blue;
+}
+
+.box-container div:nth-child(3) {
+    background: green;
+}
+
+.box-container div:nth-child(4) {
+    background: orange;
+}
+
+.box-container div:nth-child(5) {
+    background: purple;
+}
+
+.box-container div:nth-child(6) {
+    background: brown;
+}
+
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
 }
 /* ********** Reset ********** */
 html {

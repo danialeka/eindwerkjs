@@ -1,0 +1,10 @@
+<p>jQuery is een framework voor JavaScript dat het makkelijker maakt om interactieve en dynamische
+websites
+te bouwen. Met relatief weinig scriptcode kan een ontwikkelaar bepaalde functionaliteit programmeren
+die
+in principe in elke browser zal werken.</p>
+<p>jQuery maakt het makkelijker om gebruik te maken van het Document Object Model (DOM) van
+HTML-documenten, gebeurtenissen (events) af te handelen, animaties toe te passen, css te manipuleren
+en
+te communiceren met de webserver door middel van Ajax. De basis van de library is naar wens uit te
+breiden met diverse plug-ins.</p>

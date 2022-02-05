@@ -1,0 +1,5 @@
+<p>Een jQuery-plug-in is een methode die we gebruiken om het prototype-object van jQuery uit te breiden.
+Het is een stukje code dat is geschreven in een JavaScript-bestand, waardoor alle jQuery-objecten
+alle
+methoden die u toevoegt, kunnen erven. ... Het vereenvoudigt en standaardiseert interacties tussen
+JavaScript-code en HTML-elementen.</p>
