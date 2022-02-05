@@ -8,12 +8,10 @@
     <title>JqueryPromotion</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
-
-
+    <link href="css/jquery-gallery.css" rel="stylesheet">
 </head>
 
 <body>
-
     <article class="hero-image">
         <aside class="hero-image-opacity">
             <div class="hero-image-content">
@@ -30,94 +28,142 @@
         <img src="images/Logo_jQuery.svg.png" alt="">
 
     </section>
+
+
+
+    <div class="container">
+        <div class="box-container clearfix">
+            <div>
+                <p>J</p>
+            </div>
+            <div>
+                <p>q</p>
+            </div>
+            <div>
+                <p>u</p>
+            </div>
+            <div>
+                <p>e</p>
+            </div>
+            <div>
+                <p>r</p>
+            </div>
+            <div>
+                <p>y</p>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <h2>Jquery, Wat is het?</h2>
         <div id="accordion">
             <h3>Betekenis: JQuery</h3>
-            <div>
-                <p>jQuery is een framework voor JavaScript dat het makkelijker maakt om interactieve en dynamische
-                    websites
-                    te bouwen. Met relatief weinig scriptcode kan een ontwikkelaar bepaalde functionaliteit programmeren
-                    die
-                    in principe in elke browser zal werken.</p>
-                <p>jQuery maakt het makkelijker om gebruik te maken van het Document Object Model (DOM) van
-                    HTML-documenten, gebeurtenissen (events) af te handelen, animaties toe te passen, css te manipuleren
-                    en
-                    te communiceren met de webserver door middel van Ajax. De basis van de library is naar wens uit te
-                    breiden met diverse plug-ins.</p>
-            </div>
+            <div class="inhoud-1"></div>
             <h3>Waar wordt jQuery voor gebruikt?</h3>
-            <div>
-                <p>jQuery is een framework gebouwd met JavaScript. Het helpt webontwikkelaars om extra functionaliteiten
-                    aan
-                    hun websites toe te voegen. Het is de meest populaire JavaScript-bibliotheek die wordt gebruikt om
-                    de
-                    HTML DOM-boom te doorkruisen en te manipuleren. Het vereenvoudigt ook de afhandeling van
-                    gebeurtenissen,
-                    CSS-animatie en Ajax</p>
-            </div>
+            <div class="inhoud-2"></div>
             <h3>jQuery-plug-ins?</h3>
-            <div>
-                <p>Een jQuery-plug-in is een methode die we gebruiken om het prototype-object van jQuery uit te breiden.
-                    Het is een stukje code dat is geschreven in een JavaScript-bestand, waardoor alle jQuery-objecten
-                    alle
-                    methoden die u toevoegt, kunnen erven. ... Het vereenvoudigt en standaardiseert interacties tussen
-                    JavaScript-code en HTML-elementen.</p>
-                <h4>Voorbeelden van plugins</h4>
-                <ul>
-                    <li>Slider voor foto's</li>
-                    <li>formulier plug-ins</li>
-                    <li>Animaties</li>
-                    <li>En zoveel meer</li>
-                </ul>
-            </div>
+            <div class="inhoud-3"></div>
+            <h4>Voorbeelden van plugins</h4>
+            <ul>
+                <li>- Slider voor foto's</li>
+                <input id="knop" type="button" value="Tonen-Verbergen" />
+                <p>een werkend voorbeeld van een simpele foto slider</p>
+                <section class="show_hide">
+                    <ul class="gallery-slideshow">
+                        <li><img src="images/foto1.jpg"></li>
+                        <li><img src="images/foto2.jpg"></li>
+                        <li><img src="images/foto3.jpg"></li>
+                        <li><img src="images/foto4.jpg"></li>
+                        <li><img src="images/foto5.jpg"></li>
+                    </ul>
+                </section>
+                <li>- formulier plug-ins</li>
+                <li>- Animaties</li>
+                <li>- En zoveel meer</li>
+            </ul>
             <h3>jQuery AJAX?</h3>
             <div>
-                <p>AJAX staat voor "Asynchronous JavaScript en XML". Ajax gaat over het gebruik van deze mogelijkheid
-                    van
-                    JavaScript om een asynchroon http-verzoek te verzenden en de XML-gegevens als antwoord te krijgen
-                    (ook
-                    in andere formaten) en het deel van een webpagina bij te werken (met JavaScript) zonder de hele
-                    webpagina opnieuw te laden of te vernieuwen</p>
+                <div class="inhoud-4"></div>
+                <div id="contentarea">
+                    <button id="content1">Voorbeeld van AJAX</button>
+                </div>
             </div>
         </div>
-    </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+        </script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="dist/jquery.random-fade-in.js"></script>
+        <script src="js/jquery-gallery.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+        <script>
 
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+            $(document).ready(function () {
+                //begin code Christof//
+                $("div.inhoud-1").load("inhoud/tekst1.txt");
+                $("div.inhoud-2").load("inhoud/tekst2.txt");
+                $("div.inhoud-3").load("inhoud/tekst3.txt");
+                $("div.inhoud-4").load("inhoud/tekst4.txt");
 
-<script>
-    $(document).ready(function () {
-        $("#accordion").accordion({
-            icons: {
-                "header": "ui-icon-plus"
-            },
-            active: false,
-            collapsible: true
-        });
+                $('.box-container').randomFadeIn('slow');
+                $("#accordion").accordion({
+                    icons: { "header": "ui-icon-circle-triangle-s", "activeHeader": "ui-icon-circle-triangle-n" },
+                    active: false,
+                    collapsible: true
+                });
 
-        $('#popup').popup({
-            pagecontainer: 'body',
-            escape: true, // closes the popup when esc key pressed
-            transition: 'all 2.0s',
-            blur: true, //false prevent closing with click
-        });
+                $(".show_hide").css("display", "none");
+                $("#knop").on('click', function () {
+                    $(".show_hide").toggle(500);
+                });
 
-        $("#fotosola").animate({ //logo comes from the left
-            left: "0px"
-        }, 1500);
+                $(function () {
+                    $('.gallery-slideshow').slideshow({
+                        interval: 1500,
+                        width: 400,
+                        height: 300
+                    });
+                });
+
+                $('#content1').on('click', function () {
+                    getContent('data/content1.html');
+                });
+                function getContent(file) {
+                    $.ajax({
+                        url: file,
+                        type: 'GET',
+                        dataType: 'html',
+                        success: function (data, textStatus, xhr) {
+                            $('#contentarea').html(data);
+                        },
+                        error: function (xhr, textStatus, errorThrown) {
+                            $('#contentarea').html(textStatus);
+                        }
+                    });
+                }
+
+                //einde code Christof//
+                $('#popup').popup({
+                    pagecontainer: 'body',
+                    escape: true, // closes the popup when esc key pressed
+                    transition: 'all 2.0s',
+                    blur: true, //false prevent closing with click
+                });
+
+                $("#fotosola").animate({ //logo comes from the left
+                    left: "0px"
+                }, 1500);
 
 
-        $(".btn").delay(1400).effect("shake", { //shake the botton with delay of 1.4s
-            times: 2,
-            distance: 10,
+                $(".btn").delay(1400).effect("shake", { //shake the botton with delay of 1.4s
+                    times: 2,
+                    distance: 10,
 
-        }, 500);
+                }, 500);
 
 
-    });
-</script>
+
+            });
+        </script>
+
 </body>
