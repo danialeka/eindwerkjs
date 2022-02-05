@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery ripples plugin demos</title>
+
+    <style>
+        body {
+            background-image: url("images/kolk.jpg");
+            background-color: #333;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin: 0px;
+        }
+
+        div#logo {
+            float: left;
+            padding: 10px;
+            width: auto;
+            height: auto;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav ol {
+            margin: 0px;
+            padding-top: 9px;
+        }
+
+        nav ol li {
+            display: inline;
+        }
+
+        nav ol li a {
+            padding: 10px 40px;
+            color: #21609b;
+            background-color: #1a1918;
+            border-radius: 3px 3px 30px 30px;
+            text-decoration: none;
+            text-transform: lowercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .image {
+            margin-top: -200px;
+            text-align: center;
+        }
+
+        .water {
+            background-size: cover;
+            width: 1000px;
+            height: 600px;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logo"><a href="visual_effect.html"><img src="images/jquery_logo.png" alt="jQuery logo"></a></div>
+    <nav>
+        <ol>
+            <li><a href="water_effect3.html">Water effect 1</a></li>
+            <li><a href="water_effect4.html">Water effect 2</a></li>
+            <li><a href="water_effect5.html">Water effect 3</a></li>
+        </ol>
+    </nav>
+    <div class="water"
+        style="background-image:url(https://i.picsum.photos/id/384/5184/3456.jpg?hmac=n_bnNJlJ4j2jW3Zry26h7ZP1AihR7zQH1_T7CiYNQK0)">
+    </div>
+    <div class="image"><img src="images/nul_euri.png" alt="nul euro"></div>
+    <div class=" error"></div>
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script>
+        $(document).ready(function () {
+            try {
+                $('.water').ripples({
+                    resolution: 256,
+                    perturbance: 0.04
+                });
+            }
+            catch (e) {
+                $('.error').show().text(e);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

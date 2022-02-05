@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery snow plugin demo</title>
+
+    <style>
+        body {
+            background-image: url("images/bg_snow.png");
+            background-color: #AAA;
+            background-repeat: repeat-x;
+            text-align: center;
+            margin: 0px;
+        }
+
+        div#logo {
+            float: left;
+            padding: 10px;
+            width: auto;
+            height: auto;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav ol {
+            margin: 0px;
+            padding-top: 9px;
+        }
+
+        nav ol li {
+            display: inline;
+        }
+
+        nav ol li a {
+            padding: 10px 40px;
+            color: #21609b;
+            background-color: #1a1918;
+            border-radius: 3px 3px 30px 30px;
+            text-decoration: none;
+            text-transform: lowercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #divSnow {
+            background-size: cover;
+            background-color: rgb(12, 12, 12);
+            width: 650px;
+            height: 450px;
+            margin: 0px auto;
+            border-top: #DDD solid 6px;
+            border-bottom: #222 solid 40px;
+            border-radius: 50% 50% 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logo"><a href="visual_effect.html"><img src="images/jquery_logo.png" alt="jQuery logo"></a></div>
+    <nav>
+        <ol>
+            <li><a href="snow_effect2.html">Sneeuw effect 1</a></li>
+            <li><a href="snow_effect3.html">Sneeuw effect 2</a></li>
+            <li><a href="snow_effect4.html">Sneeuw effect 3</a></li>
+        </ol>
+    </nav>
+    <div id="divSnow"
+        style="background-image:url(https://i.picsum.photos/id/724/5472/3648.jpg?hmac=HumH1kM_MX4ch7BLclcLo6g7aQsaObi-kzKAvcJPHoQ);">
+    </div>
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/Websnowjq.js"></script>
+
+
+    <script>
+        $("#divSnow").websnowjq({ snowFlakes: 70 }); //amount of snow flakes in snow fall
+    </script>
+
+
+
+</body>
+
+</html>
