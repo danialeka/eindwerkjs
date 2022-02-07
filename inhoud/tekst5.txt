@@ -1,0 +1,6 @@
+<p>JSON staat voor JavaScript Object Notation</p>
+<p>JSON is een lichtgewicht formaat voor gegevensuitwisseling<br>
+JSON is taalonafhankelijk *<br>
+JSON is "zelfbeschrijvend" en gemakkelijk te begrijpen</p>
+<p>* De JSON-syntaxis is afgeleid van de JavaScript-syntaxis voor objectnotatie, 
+maar de JSON-indeling is alleen tekst. Code voor het lezen en genereren van JSON-gegevens kan in elke programmeertaal worden geschreven.</p>

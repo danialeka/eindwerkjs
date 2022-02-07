@@ -1,0 +1,16 @@
+{
+    "team": [
+        {
+            "voornaam": "Bert",
+            "achternaam": "Appel"
+        },
+        {
+            "voornaam": "Jan",
+            "achternaam": "Peers"
+        },
+        {
+            "voornaam": "Erik",
+            "achternaam": "Pruim"
+        }
+    ]
+}
