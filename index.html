@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link href="css/jquery-gallery.css" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.treeSelection.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/lumen/bootstrap.min.css">
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
@@ -93,43 +92,37 @@
                 <div class="inhoud-5"></div>
             </div>
         </div>
+        <div class="container">
+            <!-- html Anton -->
+            <div id="aqua" class=".clearfix">
+                <div class="bubble">
+                    <div id="divSnow">
+                    </div>
+                    <div class="tekst">
+                        My bubble 2022
+                    </div>
+                </div>
+                <div id="remote">
+                    <h2>Voorbeelden</h2>
+                    <ul>
+                        <li><a href="water_effect3.html" target="_blank">Water effect 1</a></li>
+                        <li><a href="water_effect4.html" target="_blank">Water effect 2</a></li>
+                        <li><a href="water_effect5.html" target="_blank">Water effect 3</a></li>
+                        <li><a href="snow_effect2.html" target="_blank">Sneeuw effect 1</a></li>
+                        <li><a href="snow_effect3.html" target="_blank">Sneeuw effect 2</a></li>
+                        <li><a href="snow_effect4.html" target="_blank">Sneeuw effect 3</a></li>
+                    </ul>
+                </div>
 
+            </div>
+        </div>
+        <!-- eind html Anton -->
         <div class="container">
             <h3>Wil je Jquery leren?</h3>
             <p>Schrijf je dan hier in</p>
             <button class="animatie_knop">Leer Jquery</button>
             <div id="verborgen">
-                <form>
-                    <p><label class="label" for="voornaam">Voornaam</label>
-                        <input class="tekstveld" type="text" name="voornaam" id="voornaam" placeholder="Voornaam">
-                    </p>
-                    <p><label class="label" for="achternaam">Achternaam</label>
-                        <input class="tekstveld" type="text" name="achternaam" id="achternaam" placeholder="Achternaam">
-                    </p>
-                    <p><label class="label" for="email">E-mail</label>
-                        <input class="tekstveld" type="email" name="email" id="email"
-                            placeholder="voorbeeld@blabla.com">
-                    </p>
-                    <p>selecteer waar en wanneer je Jquery wil leren</p>
-                    <p>-plaats van de cursus</p>
-                    <select name="selecteer1" class="custom-select">
-                        <optgroup label="plaats van de cursus">
-                            <option value="to">Thuis/online</option>
-                            <option value="os">Op school</option>
-                        </optgroup>
-                    </select><br><br>
-                    <p>-Start-/einddatum van de cursus</p>
-                    <select name="selecteer2" class="custom-select">
-                        <optgroup label="datum van de cursus" multiple>
-                            <option value="sem1">1 september - 15 december</option>
-                            <option value="sem2">10 januari - 25 maart</option>
-                            <option value="sem3">2 mei - 27 juni</option>
-                        </optgroup>
-                    </select><br><br>
-                    <p><label for="bericht">Vragen/opmerkingen:</label></p>
-                    <textarea name="bericht" id="bericht" cols="70" rows="10"></textarea>
-                    <p><input class="border-knop" type="button" value="Inschrijven"></p>
-                </form>
+
             </div>
         </div>
         <!-- html Daniel -->
@@ -196,7 +189,10 @@
     <script
         src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
     <script src="js/danieljq.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script src="js/Websnowjq.js"></script>
     <script>
+
 
         $(document).ready(function () {
 
@@ -274,6 +270,12 @@
             });
 
             //einde code Christof//
+            //begin code Anton
+
+            $("#divSnow").websnowjq({ snowFlakes: 40 })
+            $("#divSnow").websnowjq({ snowFlakes: 20 });
+
+            //einde code Anton
             //begin code Daniel
             $('#popup').popup({
                 pagecontainer: 'body',

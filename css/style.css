@@ -18,10 +18,10 @@ body {
     background-attachment: fixed;
 }
 
-
 .container {
     width: 900px;
     margin: auto;
+    margin-top: 50px;
     padding-top: 50px;
 }
 
@@ -198,6 +198,104 @@ form textarea {
     border-radius: 5px;
 }
 
+/* ------------- start styles Anton ------------- */
+
+div#aqua {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.tekst {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #999;
+    margin-top: -35px;
+    text-align: center;
+}
+.bubble {
+    background-image: linear-gradient(#FFF, aqua);
+    width: 800px;
+    height: 500px;
+    padding-top 10px;
+    border-radius: 15px;
+    margin: 10px auto 10px auto;
+}
+#divSnow {
+    background-size: cover;
+    background-color: rgb(12, 12, 12);
+    width: 650px;
+    height: 480px;
+    margin: 0px auto;
+    border-top: #CCC solid 4px;
+    border-left: #CCC solid 1px;
+    border-right: #CCC solid 1px;
+    border-bottom: #222 solid 40px;
+    border-radius: 50% 50% 10px 10px;
+    background-image: url(https://i.picsum.photos/id/903/5616/3744.jpg?hmac=MfpYWi6n8atfdo54KB8Iv9yEWG06TAw9FXMYk5JEuzY);
+}
+#remote {
+    color: #1a1918;
+    width: 500px;
+    height: 400px;
+    margin: 0px auto;
+    border-radius: 25px;
+    background-image: url("../images/druppels.jpg");
+    background-size: cover;
+}
+
+#remote h2 {
+    color: #1a1918;
+    padding-top: 20px; 
+    margin-bottom: 0px;
+}
+
+#remote ul {
+    list-style-type: none;
+    margin-top: 0px;
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+#remote li {
+    margin: 20px 0px;
+    text-transform: lowercase;
+}
+
+#remote a {
+    color: #21609bD;
+    text-decoration: none;
+    padding: 10px 50px;
+    background-color: #1a1918;
+    border-radius: 25px;
+}
+
+#remote a:hover {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #222;
+}
+
+#remote header a,
+#remote header a:hover {
+    border: none;
+    padding: 0px;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+
+
+/* ------------- end styles Anton------------- */
+
+
+
+
+
+
+
+
 /* css footer DAniel */
 .site-footer {
     background-color: #26272b;
@@ -274,3 +372,4 @@ form textarea {
 .copyright-text {
     margin: 0
 }
+
