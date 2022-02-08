@@ -19,7 +19,7 @@
         <aside class="hero-image-opacity">
             <div class="hero-image-content">
                 <h2 class="hero-image-title">
-                    <img id="fotosola" src="images/logosolo.png" alt="logo"> jQuery
+                    <img id="fotosola" src="images/jquery-4.svg" alt="logo"> jQuery
                 </h2>
                 <a href="#" class="popup_open btn">CLICK ME</a>
             </div>
@@ -125,19 +125,22 @@
             </div>
         </div>
         <!-- html Daniel -->
-        <hr>
+
         <footer class="site-footer">
+
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <h6>JQUERY</h6>
+                    <div class="col-sm-12 col-md-4">
+                        <h6>JQUERY <div class="underline"><span></span></div>
+                        </h6><br>
                         <p class="text-justify"></p> informatieve en promotionele website over Jquery, laatste werk
                         voor
                         de jQuery-klasse, gebruik van de verschillende jQuery-eigenschappen</p>
                     </div>
 
                     <div class="col-xs-6 col-md-3">
-                        <h6>INFO PAGES</h6>
+                        <h6>INFO PAGES<div class="underline"><span></span></div>
+                        </h6><br>
                         <ul class="footer-links">
                             <li><a href="https://api.jquery.com/">API</a></li>
                             <li><a href="https://releases.jquery.com/">CDN</a></li>
@@ -151,25 +154,28 @@
                     </div>
 
                     <div class="col-xs-6 col-md-3">
-                        <h6>Autors</h6>
+                        <h6>Authors<div class="underline"><span></span></div>
+                        </h6><br>
                         <ul class="footer-links">
                             <li>Cristof</li>
                             <li>Anton</li>
                             <li>Daniel</li>
-
                         </ul>
                     </div>
+                    <div class="col-xs-6 col-md-2">
+                        <img src="images/jquery-4.svg" alt="">
+                    </div>
+
                 </div>
                 <hr>
             </div>
-            <div class="container">
+            <div class="container copyright">
                 <div class="row">
                     <div class="col-md-8 col-sm-6 col-xs-12">
                         <p class="copyright-text">Copyright &copy; 2022, CVO DE VERDIEPING FUW
 
                         </p>
                     </div>
-
                 </div>
             </div>
         </footer>
@@ -185,14 +191,12 @@
     <script src="dist/jquery.random-fade-in.js"></script>
     <script src="js/jquery-gallery.js"></script>
     <script src="js/jquery.treeSelection.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js">
+    </script>
     <script src="js/danieljq.js"></script>
     <script src="js/jquery.ripples.js"></script>
     <script src="js/Websnowjq.js"></script>
     <script>
-
-
         $(document).ready(function () {
 
             //begin code Christof//
@@ -205,7 +209,10 @@
 
             $('.box-container').randomFadeIn('slow');
             $("#accordion").accordion({
-                icons: { "header": "ui-icon-circle-triangle-s", "activeHeader": "ui-icon-circle-triangle-n" },
+                icons: {
+                    "header": "ui-icon-circle-triangle-s",
+                    "activeHeader": "ui-icon-circle-triangle-n"
+                },
                 active: false,
                 collapsible: true
             });
@@ -226,6 +233,7 @@
             $('#content1').on('click', function () {
                 getContent('data/content1.html');
             });
+
             function getContent(file) {
                 $.ajax({
                     url: file,
@@ -243,7 +251,8 @@
             $.getJSON("json/team.json",
                 function (data) {
                     $.each(data.team, function (i, team) {
-                        let members = "<p>" + "-" + " " + team.voornaam + " " + team.achternaam + "</p>";
+                        let members = "<p>" + "-" + " " + team.voornaam + " " + team.achternaam +
+                            "</p>";
                         $(".team_members").append(members);
                     });
                 });
@@ -255,11 +264,17 @@
 
             $(".animatie_knop")
                 .on("mouseenter", function () {
-                    $(this).stop().animate({ width: "600px", height: "100px" });
+                    $(this).stop().animate({
+                        width: "600px",
+                        height: "100px"
+                    });
                     $(this).css("background-color", "purple");
                 })
                 .on("mouseleave", function () {
-                    $(this).stop().animate({ width: "300px", height: "50px" });
+                    $(this).stop().animate({
+                        width: "300px",
+                        height: "50px"
+                    });
                     $(this).css("background-color", "mediumaquamarine");
                 });
 
@@ -270,7 +285,9 @@
 
             //einde code Christof//
             //begin code Anton
-            $("#divSnow").websnowjq({ snowFlakes: 80 });
+            $("#divSnow").websnowjq({
+                snowFlakes: 80
+            });
             //einde code Anton
             //begin code Daniel
             $('#popup').popup({
