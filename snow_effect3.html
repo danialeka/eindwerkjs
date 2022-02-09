@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="author" content="A.J. Velthuizen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery snow plugin demo</title>
 
     <style>
         body {
             background-image: url("images/druppels.jpg");
-            background-color: #EEE;
+            background-color: #DDD;
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
             text-align: center;
             margin: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0px auto;
+            text-align: center;
         }
 
         div#logo {
@@ -50,18 +58,29 @@
         #divSnow {
             background-size: cover;
             background-color: rgb(12, 12, 12);
-            width: 960px;
-            height: 550px;
+            width: 100%;
+            height: 480px;
             margin: 0px auto;
-            border-bottom: #FFF solid 10px;
-            border-top: #222 solid 10px;
-            border-radius: 50%;
+            border-bottom: #DDD solid 6px;
+            border-top: #222 solid 6px;
+        }
+
+        #content {
+            background-color: rgba(250, 246, 246, 0.9);
+            color: rgb(12, 12, 12);
+            width: 800px;
+            height: 800px;
+            margin: 0px auto;
+            text-align: center;
+            margin-top: -120px;
+            padding: 40px;
+            border-radius: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div id="logo"><a href="visual_effect.html"><img src="images/jquery_logo.png" alt="jQuery logo"></a></div>
+    <div id="logo"><a href="index.html#remote"><img src="images/jquery_logo.png" alt="jQuery logo"></a></div>
     <nav>
         <ol>
             <li><a href="snow_effect2.html">Sneeuw effect 1</a></li>
@@ -70,18 +89,28 @@
         </ol>
     </nav>
     <div id="divSnow"
-        style="background-image:url(https://i.picsum.photos/id/328/3264/2448.jpg?hmac=rR8AM7aOiJkj7PHfKTv_1H0_2Mmi2tYEuXvKR1S0wNU);">
+        style="background-image:url(https://i.picsum.photos/id/684/3872/2178.jpg?hmac=_kCER0s1iGCf3tNMsJPkghB8wokudDiVHCbS-npOst8"
+        ;>
     </div>
-    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>s
+    <div id="content">
+        <h1>Sneeuwverwachting Alpen</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
+            inventore?
+            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
+            inventore?
+            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        </p>
+    </div>
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/Websnowjq.js"></script>
-
-
     <script>
-        $("#divSnow").websnowjq({ snowFlakes: 70 }); //amount of snow flakes in snow fall
+        $(document).ready(function () {
+            $("#divSnow").websnowjq({ snowFlakes: 150 });
+            $("#divSnow").websnowjq({ snowFlakes: 100 });
+        });
     </script>
-
-
-
 </body>
 
 </html>

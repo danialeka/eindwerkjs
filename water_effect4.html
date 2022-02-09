@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
 <head>
-    <title>jQuery ripples plugin demos</title>
+    <meta charset="utf-8">
+    <meta name="author" content="A.J. Velthuizen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery water plugin demo</title>
 
     <style>
         body {
             background-image: url("images/kolk.jpg");
-            background-color: #333;
+            background-color: #DDD;
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
             text-align: center;
             margin: 0px;
+            width: 100%;
+            height: 100%;
         }
 
         div#logo {
@@ -23,7 +28,7 @@
         }
 
         nav {
-            margin-bottom: 30px;
+            margin-bottom: 52px;
         }
 
         nav ol {
@@ -47,8 +52,9 @@
             font-size: 18px;
         }
 
-        .image {
-            margin-top: -200px;
+        .lelie {
+            margin-top: -395px;
+            margin-left: 280px;
             text-align: center;
         }
 
@@ -58,11 +64,21 @@
             height: 600px;
             margin: 0px auto;
         }
+
+        #content {
+            color: #AAA;
+            background-color: rgb(12, 12, 12);
+            width: 700px;
+            margin: 0px auto;
+            margin-top: 50px;
+            padding: 20px 60px 80px 60px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 
 <body>
-    <div id="logo"><a href="visual_effect.html"><img src="images/jquery_logo.png" alt="jQuery logo"></a></div>
+    <div id="logo"><a href="index.html#remote"><img src="images/jquery_logo.png" alt="jQuery logo"></a></div>
     <nav>
         <ol>
             <li><a href="water_effect3.html">Water effect 1</a></li>
@@ -71,9 +87,9 @@
         </ol>
     </nav>
     <div class="water"
-        style="background-image:url(https://i.picsum.photos/id/384/5184/3456.jpg?hmac=n_bnNJlJ4j2jW3Zry26h7ZP1AihR7zQH1_T7CiYNQK0)">
+        style="background-image:url(https://i.picsum.photos/id/306/1024/768.jpg?hmac=rXix18Pn1poetHRHwu28zu8hUP0KobfXP28uQgomRAI)">
     </div>
-    <div class="image"><img src="images/nul_euri.png" alt="nul euro"></div>
+    <div class="lelie"><img src="images/lelie.png" alt="lelie"></div>
     <div class=" error"></div>
     <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.ripples.js"></script>
@@ -90,7 +106,6 @@
             }
         });
     </script>
-
 </body>
 
 </html>

@@ -3,4 +3,15 @@ $(window).scroll(function () {
     $('.maincontainer').css({
         'background-position-x': -scroll_posit + 'px',
     })
-})
+});
+
+let line = ".underline span";
+
+$("footer")
+    .mouseover(function () {
+        $(line).css("display", "block");
+
+    })
+    .mouseout(function () {
+        $(line).css("display", "none");
+    });

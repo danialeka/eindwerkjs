@@ -9,7 +9,6 @@
     <link href="css/jquery-gallery.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 
@@ -18,7 +17,7 @@
         <aside class="hero-image-opacity">
             <div class="hero-image-content">
                 <h2 class="hero-image-title">
-                    <img id="fotosola" src="images/logosolo.png" alt="logo"> jQuery
+                    <img id="fotosola" src="images/jquery-4.svg" alt="logo"> jQuery
                 </h2>
                 <a href="#" class="popup_open btn">CLICK ME</a>
             </div>
@@ -86,36 +85,55 @@
                     <li><img src="images/foto2.jpg"></li>
                     <li><img src="images/foto3.jpg"></li>
                     <li><img src="images/foto4.jpg"></li>
-                    <li><img src="images/foto5.jpg"></li>
                 </ul>
                 <input id="knop_verberg" type="button" value="Verberg voorbeeld slider" />
             </section>
         </div>
-
-
         <div class="container">
-            <div class="con">
-                <h3>Wil je jQuery leren?</h3>
-                <p>Schrijf je dan hier in</p>
-                <div class="animatie">
-                    <button onclick="window.location.href='form.html'" class="animatie_knop">Leer Jquery</a></button>
+            <div id="aqua" class=".clearfix">
+                <div id="remote">
+                    <h2>Voorbeelden</h2>
+                    <ul>
+                        <li><a href="water_effect3.html" target="_blank">Water effect 1</a></li>
+                        <li><a href="water_effect5.html" target="_blank">Water effect 3</a></li>
+                        <li><a href="snow_effect2.html" target="_blank">Sneeuw effect 1</a></li>
+                        <li><a href="snow_effect3.html" target="_blank">Sneeuw effect 2</a></li>
+                        <li><a href="snow_effect4.html" target="_blank">Sneeuw effect 3</a></li>
+                    </ul>
+                </div>
+                <div class="bubble">
+                    <div id="divSnow"></div>
+                    <div class="tekst">
+                        My bubble 2022
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- html Daniel -->
+    </div>
+    <!-- eind html Anton -->
+    <div class="container">
+        <div class="con">
+            <h3>Wil je jQuery leren?</h3>
+            <p>Schrijf je dan hier in</p>
+            <div class="animatie">
+                <button onclick="window.location.href='form.html'" class="animatie_knop">Leer Jquery</a></button>
+            </div>
+            <!-- html Daniel -->
 
-        <footer class="site-footer">
-            <div class="container">
+            <footer class="site-footer">
+
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <h6>JQUERY</h6>
+                    <div class="col-sm-12 col-md-4">
+                        <h6>JQUERY <div class="underline"><span></span></div>
+                        </h6><br>
                         <p class="text-justify"></p> informatieve en promotionele website over Jquery, laatste werk
                         voor
                         de jQuery-klasse, gebruik van de verschillende jQuery-eigenschappen</p>
                     </div>
 
                     <div class="col-xs-6 col-md-3">
-                        <h6>INFO PAGES</h6>
+                        <h6>INFO PAGES<div class="underline"><span></span></div>
+                        </h6><br>
                         <ul class="footer-links">
                             <li><a href="https://api.jquery.com/">API</a></li>
                             <li><a href="https://releases.jquery.com/">CDN</a></li>
@@ -129,26 +147,30 @@
                     </div>
 
                     <div class="col-xs-6 col-md-3">
-                        <h6>Autors</h6>
+                        <h6>Authors<div class="underline"><span></span></div>
+                        </h6><br>
                         <ul class="footer-links">
                             <section class="toon-verberg">
                                 <div class="team_members"></div>
                             </section>
                         </ul>
                     </div>
-                </div>
-                <hr>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">Copyright &copy; 2022, CVO DE VERDIEPING FUW
-
-                        </p>
+                    <div class="col-xs-6 col-md-2">
+                        <img src="images/jquery-4.svg" alt="">
                     </div>
 
                 </div>
+                <hr>
+        </div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2022, CVO DE VERDIEPING FUW
+
+                    </p>
+                </div>
             </div>
+        </div>
         </footer>
     </div>
 
@@ -161,11 +183,12 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="dist/jquery.random-fade-in.js"></script>
     <script src="js/jquery-gallery.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js">
+    </script>
     <script src="js/danieljq.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script src="js/Websnowjq.js"></script>
     <script>
-
         $(document).ready(function () {
 
             //begin code Christof//
@@ -179,7 +202,10 @@
 
             $('.box-container').randomFadeIn('slow');
             $("#accordion").accordion({
-                icons: { "header": "ui-icon-circle-triangle-s", "activeHeader": "ui-icon-circle-triangle-n" },
+                icons: {
+                    "header": "ui-icon-circle-triangle-s",
+                    "activeHeader": "ui-icon-circle-triangle-n"
+                },
                 active: false,
                 collapsible: true
             });
@@ -205,6 +231,7 @@
             $('#content1').on('click', function () {
                 getContent('data/content1.html');
             });
+
             function getContent(file) {
                 $.ajax({
                     url: file,
@@ -233,12 +260,19 @@
                     $(this).css("background-color", "purple");
                 })
                 .on("mouseleave", function () {
-                    $(this).stop().animate({ width: "300px", height: "50px" });
+                    $(this).stop().animate({
+                        width: "300px",
+                        height: "50px"
+                    });
                     $(this).css("background-color", "mediumaquamarine");
                 });
 
             //einde code Christof//
-
+            //begin code Anton
+            $("#divSnow").websnowjq({
+                snowFlakes: 80
+            });
+            //einde code Anton
             //begin code Daniel
             $('#popup').popup({
                 pagecontainer: 'body',
