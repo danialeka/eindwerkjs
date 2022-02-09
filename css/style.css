@@ -23,6 +23,7 @@ body {
 }
 
 .con {
+    margin-top: 250px;
     text-align: center;
 }
 
@@ -161,9 +162,6 @@ a.btn:hover {
 #fotosola {
     position: relative;
     left: -800px;
-
-
-
 }
 
 .animatie_knop {
@@ -299,16 +297,7 @@ div#aqua {
     background-color: transparent;
 }
 
-
-
 /* ------------- end styles Anton------------- */
-
-
-
-
-
-
-
 
 /* css footer DAniel */
 .site-footer {

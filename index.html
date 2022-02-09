@@ -109,19 +109,22 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- eind html Anton -->
-    <div class="container">
-        <div class="con">
-            <h3>Wil je jQuery leren?</h3>
-            <p>Schrijf je dan hier in</p>
-            <div class="animatie">
-                <button onclick="window.location.href='form.html'" class="animatie_knop">Leer Jquery</a></button>
+
+        <!-- eind html Anton -->
+        <div class="container">
+            <div class="con">
+                <h3>Wil je jQuery leren?</h3>
+                <p>Schrijf je dan hier in</p>
+                <div class="animatie">
+                    <button onclick="window.location.href='form.html'" class="animatie_knop">Leer Jquery</a></button>
+                </div>
             </div>
-            <!-- html Daniel -->
+        </div>
+        <!-- html Daniel -->
 
-            <footer class="site-footer">
+        <footer class="site-footer">
 
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
                         <h6>JQUERY <div class="underline"><span></span></div>
@@ -161,20 +164,18 @@
 
                 </div>
                 <hr>
-        </div>
-        <div class="container copyright">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2022, CVO DE VERDIEPING FUW
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2022, CVO DE VERDIEPING FUW
 
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
         </footer>
     </div>
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js">
@@ -260,10 +261,7 @@
                     $(this).css("background-color", "purple");
                 })
                 .on("mouseleave", function () {
-                    $(this).stop().animate({
-                        width: "300px",
-                        height: "50px"
-                    });
+                    $(this).stop().animate({ width: "300px", height: "50px" });
                     $(this).css("background-color", "mediumaquamarine");
                 });
 
