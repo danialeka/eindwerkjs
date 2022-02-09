@@ -31,16 +31,16 @@
             margin-bottom: 52px;
         }
 
-        nav ol {
+        nav ul {
             margin: 0px;
             padding-top: 9px;
         }
 
-        nav ol li {
+        nav ul li {
             display: inline;
         }
 
-        nav ol li a {
+        nav ul li a {
             padding: 10px 40px;
             color: #21609b;
             background-color: #1a1918;
@@ -67,12 +67,16 @@
 
         #content {
             color: #AAA;
-            background-color: rgb(12, 12, 12);
-            width: 700px;
+            background-color: #1a1918;
+            width: 880px;
             margin: 0px auto;
             margin-top: 50px;
             padding: 20px 60px 80px 60px;
-            border-radius: 20px;
+        }
+
+        #content h1 {
+            color: #21609b;
+            margin: 0px;
         }
     </style>
 </head>
@@ -80,17 +84,29 @@
 <body>
     <div id="logo"><a href="index.html#remote"><img src="images/jquery_logo.png" alt="jQuery logo"></a></div>
     <nav>
-        <ol>
+        <ul>
             <li><a href="water_effect3.html">Water effect 1</a></li>
             <li><a href="water_effect4.html">Water effect 2</a></li>
-            <li><a href="water_effect5.html">Water effect 3</a></li>
-        </ol>
+            <li><a href="snow_effect2.html">Sneeuw effect 1</a></li>
+            <li><a href="snow_effect3.html">Sneeuw effect 2</a></li>
+        </ul>
     </nav>
     <div class="water"
         style="background-image:url(https://i.picsum.photos/id/306/1024/768.jpg?hmac=rXix18Pn1poetHRHwu28zu8hUP0KobfXP28uQgomRAI)">
     </div>
     <div class="lelie"><img src="images/lelie.png" alt="lelie"></div>
     <div class=" error"></div>
+    <div id="content">
+        <h1>Water effect met WebGL</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
+            inventore?
+            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
+            inventore?
+            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        </p>
+    </div>
     <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.ripples.js"></script>
     <script>
@@ -98,7 +114,9 @@
             try {
                 $('.water').ripples({
                     resolution: 256,
-                    perturbance: 0.04
+                    dropRadius: 25,
+                    perturbance: 0.03,
+                    interactive: true,
                 });
             }
             catch (e) {

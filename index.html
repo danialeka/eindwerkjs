@@ -92,13 +92,12 @@
         <div class="container">
             <div id="aqua" class=".clearfix">
                 <div id="remote">
-                    <h2>Voorbeelden</h2>
+                    <h2>Effecten met jQuery</h2>
                     <ul>
-                        <li><a href="water_effect3.html" target="_blank">Water effect 1</a></li>
-                        <li><a href="water_effect5.html" target="_blank">Water effect 3</a></li>
-                        <li><a href="snow_effect2.html" target="_blank">Sneeuw effect 1</a></li>
-                        <li><a href="snow_effect3.html" target="_blank">Sneeuw effect 2</a></li>
-                        <li><a href="snow_effect4.html" target="_blank">Sneeuw effect 3</a></li>
+                        <li><a href="water_effect3.html" target="_blank" class="pulsate">Water effect met WebGL</a></li>
+                        <li><a href="water_effect4.html" target="_blank" class="pulsate">Water effect met WebGL</a></li>
+                        <li><a href="snow_effect2.html" target="_blank" class="pulsate">Sneeuw effect jQ</a></li>
+                        <li><a href="snow_effect3.html" target="_blank" class="pulsate">Sneeuw effect jQ</a></li>
                     </ul>
                 </div>
                 <div class="bubble">
@@ -189,6 +188,7 @@
     <script src="js/danieljq.js"></script>
     <script src="js/jquery.ripples.js"></script>
     <script src="js/Websnowjq.js"></script>
+    <script src="js/jquery.pulsate.js"></script>
     <script>
         $(document).ready(function () {
 
@@ -267,9 +267,18 @@
 
             //einde code Christof//
             //begin code Anton
+            $(".pulsate")
+                .on("mouseenter", function () {
+                    $(this).css("border", "1px solid #09F");
+                })
+                .on("mouseleave", function () {
+                    $(this).css("border", "none");
+                });
             $("#divSnow").websnowjq({
                 snowFlakes: 80
             });
+
+
             //einde code Anton
             //begin code Daniel
             $('#popup').popup({
