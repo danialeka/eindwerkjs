@@ -1,6 +1,6 @@
-<p>JSON staat voor JavaScript Object Notation</p>
-<p>JSON is een lichtgewicht formaat voor gegevensuitwisseling<br>
-JSON is taalonafhankelijk *<br>
-JSON is "zelfbeschrijvend" en gemakkelijk te begrijpen</p>
-<p>* De JSON-syntaxis is afgeleid van de JavaScript-syntaxis voor objectnotatie, 
-maar de JSON-indeling is alleen tekst. Code voor het lezen en genereren van JSON-gegevens kan in elke programmeertaal worden geschreven.</p>
+<p>AJAX staat voor "Asynchronous JavaScript en XML". Ajax gaat over het gebruik van deze mogelijkheid
+van
+JavaScript om een asynchroon http-verzoek te verzenden en de XML-gegevens als antwoord te krijgen
+(ook
+in andere formaten) en het deel van een webpagina bij te werken (met JavaScript) zonder de hele
+webpagina opnieuw te laden of te vernieuwen</p>

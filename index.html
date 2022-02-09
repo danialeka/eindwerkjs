@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JqueryPromotion</title>
+    <link href="css/jquery-gallery.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
-    <link href="css/jquery-gallery.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.treeSelection.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/lumen/bootstrap.min.css">
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 
@@ -36,10 +34,10 @@
         <div class="container">
             <div class="box-container clearfix">
                 <div>
-                    <p>J</p>
+                    <p>j</p>
                 </div>
                 <div>
-                    <p>q</p>
+                    <p>Q</p>
                 </div>
                 <div>
                     <p>u</p>
@@ -57,83 +55,55 @@
         </div>
 
         <div class="container">
-            <h2>Jquery, Wat is het?</h2>
+            <h2>jQuery, Wat is het?</h2>
             <div id="accordion">
-                <h3>Betekenis: JQuery</h3>
+                <h3>Betekenis: jQuery</h3>
                 <div class="inhoud-1"></div>
                 <h3>Waar wordt jQuery voor gebruikt?</h3>
                 <div class="inhoud-2"></div>
                 <h3>jQuery plug-ins?</h3>
                 <div class="inhoud-3"></div>
-                <h4>Voorbeelden van plug-ins</h4>
-                <ul>
-                    <li>- Slider voor foto's <input id="knop" type="button" value="Toon-Verberg voorbeeld" /></li>
-                    <section class="show_hide">
-                        <p>een werkend voorbeeld van een simpele foto slider</p>
-                        <ul class="gallery-slideshow">
-                            <li><img src="images/foto1.jpg"></li>
-                            <li><img src="images/foto2.jpg"></li>
-                            <li><img src="images/foto3.jpg"></li>
-                            <li><img src="images/foto4.jpg"></li>
-                            <li><img src="images/foto5.jpg"></li>
-                        </ul>
-                    </section>
-                    <li>- formulier plug-ins(zie voorbeeld in inschrijvings formulier)</li>
-                    <li>- Animaties</li>
-                    <li>- En zoveel meer</li>
-                </ul>
-                <h3>jQuery AJAX?</h3>
+                <h3>Voorbeelden van plug-ins</h3>
                 <div>
                     <div class="inhoud-4"></div>
+                    <input id="knop_toon" type="button" value="Toon voorbeeld slider" />
+                </div>
+                <h3>jQuery AJAX?</h3>
+                <div class="inhoud_area">
+                    <div class="inhoud-5"></div>
                     <div id="contentarea">
                         <button id="content1">Voorbeeld van AJAX</button>
                     </div>
                 </div>
                 <h3>Wat is JSON?</h3>
-                <div class="inhoud-5"></div>
+                <div class="inhoud-6"></div>
             </div>
         </div>
+        <div class="container">
+            <section class="show_hide">
+                <ul class="gallery-slideshow">
+                    <li><img src="images/foto1.jpg"></li>
+                    <li><img src="images/foto2.jpg"></li>
+                    <li><img src="images/foto3.jpg"></li>
+                    <li><img src="images/foto4.jpg"></li>
+                    <li><img src="images/foto5.jpg"></li>
+                </ul>
+                <input id="knop_verberg" type="button" value="Verberg voorbeeld slider" />
+            </section>
+        </div>
+
 
         <div class="container">
-            <h3>Wil je Jquery leren?</h3>
-            <p>Schrijf je dan hier in</p>
-            <button class="animatie_knop">Leer Jquery</button>
-            <div id="verborgen">
-                <form>
-                    <p><label class="label" for="voornaam">Voornaam</label>
-                        <input class="tekstveld" type="text" name="voornaam" id="voornaam" placeholder="Voornaam">
-                    </p>
-                    <p><label class="label" for="achternaam">Achternaam</label>
-                        <input class="tekstveld" type="text" name="achternaam" id="achternaam" placeholder="Achternaam">
-                    </p>
-                    <p><label class="label" for="email">E-mail</label>
-                        <input class="tekstveld" type="email" name="email" id="email"
-                            placeholder="voorbeeld@blabla.com">
-                    </p>
-                    <p>selecteer waar en wanneer je Jquery wil leren</p>
-                    <p>-plaats van de cursus</p>
-                    <select name="selecteer1" class="custom-select">
-                        <optgroup label="plaats van de cursus">
-                            <option value="to">Thuis/online</option>
-                            <option value="os">Op school</option>
-                        </optgroup>
-                    </select><br><br>
-                    <p>-Start-/einddatum van de cursus</p>
-                    <select name="selecteer2" class="custom-select">
-                        <optgroup label="datum van de cursus" multiple>
-                            <option value="sem1">1 september - 15 december</option>
-                            <option value="sem2">10 januari - 25 maart</option>
-                            <option value="sem3">2 mei - 27 juni</option>
-                        </optgroup>
-                    </select><br><br>
-                    <p><label for="bericht">Vragen/opmerkingen:</label></p>
-                    <textarea name="bericht" id="bericht" cols="70" rows="10"></textarea>
-                    <p><input class="border-knop" type="button" value="Inschrijven"></p>
-                </form>
+            <div class="con">
+                <h3>Wil je jQuery leren?</h3>
+                <p>Schrijf je dan hier in</p>
+                <div class="animatie">
+                    <button onclick="window.location.href='form.html'" class="animatie_knop">Leer Jquery</a></button>
+                </div>
             </div>
         </div>
         <!-- html Daniel -->
-        <hr>
+
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
@@ -161,10 +131,9 @@
                     <div class="col-xs-6 col-md-3">
                         <h6>Autors</h6>
                         <ul class="footer-links">
-                            <li>Cristof</li>
-                            <li>Anton</li>
-                            <li>Daniel</li>
-
+                            <section class="toon-verberg">
+                                <div class="team_members"></div>
+                            </section>
                         </ul>
                     </div>
                 </div>
@@ -192,7 +161,6 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="dist/jquery.random-fade-in.js"></script>
     <script src="js/jquery-gallery.js"></script>
-    <script src="js/jquery.treeSelection.js"></script>
     <script
         src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
     <script src="js/danieljq.js"></script>
@@ -207,6 +175,7 @@
             $("div.inhoud-3").load("inhoud/tekst3.txt");
             $("div.inhoud-4").load("inhoud/tekst4.txt");
             $("div.inhoud-5").load("inhoud/tekst5.txt");
+            $("div.inhoud-6").load("inhoud/tekst6.txt");
 
             $('.box-container').randomFadeIn('slow');
             $("#accordion").accordion({
@@ -216,8 +185,13 @@
             });
 
             $(".show_hide").css("display", "none");
-            $("#knop").on('click', function () {
-                $(".show_hide").toggle(500);
+            $("#knop_toon").on('click', function () {
+                $(".show_hide").show(500);
+                $("#knop_toon").hide(600);
+            });
+            $("#knop_verberg").on("click", function () {
+                $(".show_hide").hide(500);
+                $("#knop_toon").show(600);
             });
 
             $(function () {
@@ -248,19 +222,14 @@
             $.getJSON("json/team.json",
                 function (data) {
                     $.each(data.team, function (i, team) {
-                        let members = "<p>" + "-" + " " + team.voornaam + " " + team.achternaam + "</p>";
+                        let members = "<li>" + " " + team.voornaam + " " + team.achternaam + "</li>";
                         $(".team_members").append(members);
                     });
                 });
 
-            $(".toon-verberg").css("display", "none");
-            $("#knop2").on('click', function () {
-                $(".toon-verberg").toggle(250);
-            });
-
             $(".animatie_knop")
                 .on("mouseenter", function () {
-                    $(this).stop().animate({ width: "600px", height: "100px" });
+                    $(this).stop().animate({ width: "400px", height: "80px" });
                     $(this).css("background-color", "purple");
                 })
                 .on("mouseleave", function () {
@@ -268,12 +237,8 @@
                     $(this).css("background-color", "mediumaquamarine");
                 });
 
-            $(function () {
-                $('select[name=selecteer1]').treeSelection();
-                $('select[name=selecteer2]').treeSelection();
-            });
-
             //einde code Christof//
+
             //begin code Daniel
             $('#popup').popup({
                 pagecontainer: 'body',
@@ -299,3 +264,5 @@
     </script>
 
 </body>
+
+</html>

@@ -1,16 +1,16 @@
 {
     "team": [
         {
-            "voornaam": "Bert",
-            "achternaam": "Appel"
+            "voornaam": "Daniel",
+            "achternaam": "Lopez"
         },
         {
-            "voornaam": "Jan",
-            "achternaam": "Peers"
+            "voornaam": "Christof",
+            "achternaam": "Daniels"
         },
         {
-            "voornaam": "Erik",
-            "achternaam": "Pruim"
+            "voornaam": "Anton",
+            "achternaam": "Veldhuizen"
         }
     ]
 }
