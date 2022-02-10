@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/c244e50494b18630a1fa3e5665f09b69?family=Klavika+Web+Bold+Condensed);
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -224,22 +225,24 @@ div#aqua {
     margin: 0px;
 }
 
-.tekst {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: lowercase;
-    color: #999;
-    margin-top: -35px;
-    text-align: center;
-}
-
 .bubble {
-    background-image: linear-gradient(#FFF, aqua);
+    background-image: linear-gradient(#FFF, lightgray);
     width: 800px;
     height: 500px;
     padding-top: 10px;
     border-radius: 20px;
     margin: 10px auto 10px auto;
+    margin-top: 100px;
+    filter: drop-shadow(6px 10px 4px #333);
+}
+
+.tekst {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Klavika Web Bold Condensed";
+    color: #AAA;
+    margin-top: -35px;
+    text-align: center;
 }
 
 #divSnow {
@@ -254,29 +257,45 @@ div#aqua {
     border-bottom: #222 solid 40px;
     border-radius: 50% 50% 10px 10px;
     background-image: url(https://i.picsum.photos/id/903/5616/3744.jpg?hmac=MfpYWi6n8atfdo54KB8Iv9yEWG06TAw9FXMYk5JEuzY);
+    z-index: 2;
+    background-blend-mode:normal;
+}
+
+.water {
+    background-size: cover;
+    width: 800px;
+    height: 500px;
+    margin: 0px auto;
+    margin-top: 100px;
+    filter: drop-shadow(6px 10px 4px #333);
+    background-image:url(https://i.picsum.photos/id/677/4288/2848.jpg?hmac=9G3TRArVIg964T44P-E2MTu5_9Fz2juxO9meRramm_4);
 }
 
 #remote {
     color: #1a1918;
     width: 800px;
-    height: 400px;
+    height: 500px;
     margin: 0px auto;
     border-radius: 20px;
     background-image: url("../images/druppels.jpg");
     background-size: cover;
+    filter: drop-shadow(6px 10px 4px #333);
 }
 
 #remote h2 {
-    color: #21609b;
+    color: #21ace2;
     background-color: #1a1918;
     padding: 8px;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+    font-family: "Klavika Web Bold Condensed";
 }
 
 #remote ul {
     list-style-type: none;
     margin: 0px;
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 30px;
+    font-family: "Klavika Web Bold Condensed";
 }
 
 #remote li {
@@ -284,7 +303,7 @@ div#aqua {
 }
 
 #remote a {
-    color: #21609b;
+    color: #21ace2;
     text-decoration: none;
     padding: 10px 50px;
     background-color: #1a1918;
@@ -303,10 +322,6 @@ div#aqua {
     padding: 0px;
     border-radius: 15px;
     background-color: transparent;
-}
-
-#remote a:visited {
-    color: #21609b;
 }
 
 

@@ -18,7 +18,6 @@
             margin: 0px;
             width: 100%;
             height: 100%;
-            overflow: hidden;
             margin: 0px auto;
             text-align: center;
         }
@@ -61,19 +60,20 @@
             width: 100%;
             height: 480px;
             margin: 0px auto;
-            border-bottom: #DDD solid 6px;
-            border-top: #222 solid 6px;
+            border-bottom: #DDD solid 3px;
+            border-top: #222 solid 3px;
         }
 
         #content {
             background-color: rgba(250, 246, 246, 0.9);
             color: #1a1918;
             width: 800px;
-            height: 800px;
+            height: 400px;
             margin: 0px auto;
             text-align: center;
-            margin-top: -80px;
+            margin-top: -77px;
             border-radius: 20px;
+            margin-bottom: 50px;
         }
 
         #content h1 {
@@ -100,22 +100,25 @@
         ;>
     </div>
     <div id="content">
-        <h1>Sneeuw effect</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
-            inventore?
-            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        <h1>Sneeuw Effect</h1>
+        <p>
+            WebSnowjq.Js is a jQuery plugin made using HTML5 and javascript
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
-            inventore?
-            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        <p> to create a virtual snow fall on a web page.
+        </p>
+        <p>
+            WebSnowjq.Js is compatible with all browsers supporting HTML5.
+        </p>
+        <p> No effort is required to integrate
+            WebSnowjq.js in a website.
         </p>
     </div>
     <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/Websnowjq.js"></script>
     <script>
         $(document).ready(function () {
-            $("#divSnow").websnowjq({ snowFlakes: 150 });
-            $("#divSnow").websnowjq({ snowFlakes: 100 });
+            $("#divSnow").websnowjq({ snowFlakes: 50 }),
+                $("#divSnow").websnowjq({ snowFlakes: 70 })
         });
     </script>
 </body>
