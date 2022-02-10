@@ -25,13 +25,18 @@ body {
 }
 
 .con {
-    margin-top: 250px;
+    margin-top: 50px;
     text-align: center;
     color: white;
 }
 
 h1 {
     color: white;
+    font-weight: bold;
+}
+
+.container h1 {
+    text-align: center;
 }
 
 .container h2 {
@@ -66,7 +71,7 @@ h1 {
 }
 
 .box-container {
-    width: 450px;
+    width: 350px;
     margin: auto;
 }
 
@@ -125,6 +130,7 @@ h1 {
     background-color: white;
     color: blue;
     text-align: center;
+    padding: 25px 0;
 }
 
 #slide-in {
@@ -211,7 +217,8 @@ form {
     width: 600px;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: azure;
+    background-color: rgba(66, 119, 121, 0.5);
+    margin: auto;
     margin-bottom: 80px;
 }
 
@@ -221,7 +228,7 @@ form .label {
 
 form .tekstveld {
     width: 250px;
-    background-color: lightgray;
+    background-color: lightgrey;
     border: 1px solid black;
     border-radius: 5px;
 }
