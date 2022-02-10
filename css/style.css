@@ -20,6 +20,7 @@ body {
     width: 900px;
     margin: auto;
     padding: 50px 0;
+    background-color: #1E2E3B;
 }
 
 .con {
@@ -35,7 +36,12 @@ body {
     margin-left: 400px;
 }
 
-.inhoud-1, .inhoud-2, .inhoud-3, .inhoud-4, .inhoud_area, .inhoud-6 {
+.inhoud-1,
+.inhoud-2,
+.inhoud-3,
+.inhoud-4,
+.inhoud_area,
+.inhoud-6 {
     height: 120px;
 }
 
@@ -44,7 +50,9 @@ body {
     font-style: italic;
 }
 
-#knop_toon, #knop_verberg, #content1 {
+#knop_toon,
+#knop_verberg,
+#content1 {
     border-radius: 0.5rem;
     border: 1px solid black;
     background-color: green;
@@ -295,6 +303,7 @@ div#aqua {
     border-radius: 15px;
     background-color: transparent;
 }
+
 #remote a:visited {
     color: #21609b;
 }
@@ -303,14 +312,20 @@ div#aqua {
 /* ------------- end styles Anton------------- */
 
 /* css footer DAniel */
+.contfooter {
+    width: 1016px;
+    margin: auto;
+    padding: 0;
+}
+
 .site-footer {
     background-color: #26272b;
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
     color: #737373;
-    border-top-left-radius: 125px;
-    border-top-right-radius: 125px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 .site-footer hr {
@@ -377,17 +392,8 @@ div#aqua {
     background-color: #33353d
 }
 
-.copyright {
-    padding: 20px;
-}
 
-.copyright-text {
-    margin: 0
-}
 
-h6 {
-    width: fit-content;
-}
 
 .underline {
     width: 100px;
