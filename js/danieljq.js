@@ -7,7 +7,7 @@ $(window).scroll(function () {
 
 let line = ".underline span";
 
-$("footer")
+$(".site-footer")
     .mouseover(function () {
         $(line).css("display", "block");
 

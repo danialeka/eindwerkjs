@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/c244e50494b18630a1fa3e5665f09b69?family=Klavika+Web+Bold+Condensed);
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -11,14 +12,15 @@ body {
 
 .maincontainer {
     background: url("../images/pexels-mudassir-slim.png");
-    /* background-size: cover; */
-    background-repeat: repeat;
+    background-size: cover;
+    /* background-repeat: repeat; */
 }
 
 .container {
     width: 900px;
     margin: auto;
     padding: 50px 0;
+    background-color: #1E2E3B;
 }
 
 .con {
@@ -35,7 +37,12 @@ body {
     margin-left: 400px;
 }
 
-.inhoud-1, .inhoud-2, .inhoud-3, .inhoud-4, .inhoud_area, .inhoud-6 {
+.inhoud-1,
+.inhoud-2,
+.inhoud-3,
+.inhoud-4,
+.inhoud_area,
+.inhoud-6 {
     height: 120px;
 }
 
@@ -44,7 +51,9 @@ body {
     font-style: italic;
 }
 
-#knop_toon, #knop_verberg, #content1 {
+#knop_toon,
+#knop_verberg,
+#content1 {
     border-radius: 0.5rem;
     border: 1px solid black;
     background-color: green;
@@ -227,22 +236,24 @@ div#aqua {
     margin: 0px;
 }
 
-.tekst {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: lowercase;
-    color: #999;
-    margin-top: -35px;
-    text-align: center;
-}
-
 .bubble {
-    background-image: linear-gradient(#FFF, aqua);
+    background-image: linear-gradient(#FFF, lightgray);
     width: 800px;
     height: 500px;
     padding-top: 10px;
     border-radius: 20px;
     margin: 10px auto 10px auto;
+    margin-top: 100px;
+    filter: drop-shadow(6px 10px 4px #333);
+}
+
+.tekst {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Klavika Web Bold Condensed";
+    color: #AAA;
+    margin-top: -35px;
+    text-align: center;
 }
 
 #divSnow {
@@ -257,29 +268,45 @@ div#aqua {
     border-bottom: #222 solid 40px;
     border-radius: 50% 50% 10px 10px;
     background-image: url(https://i.picsum.photos/id/903/5616/3744.jpg?hmac=MfpYWi6n8atfdo54KB8Iv9yEWG06TAw9FXMYk5JEuzY);
+    z-index: 2;
+    background-blend-mode:normal;
+}
+
+.water {
+    background-size: cover;
+    width: 800px;
+    height: 500px;
+    margin: 0px auto;
+    margin-top: 100px;
+    filter: drop-shadow(6px 10px 4px #333);
+    background-image:url(https://i.picsum.photos/id/677/4288/2848.jpg?hmac=9G3TRArVIg964T44P-E2MTu5_9Fz2juxO9meRramm_4);
 }
 
 #remote {
     color: #1a1918;
     width: 800px;
-    height: 400px;
+    height: 500px;
     margin: 0px auto;
     border-radius: 20px;
     background-image: url("../images/druppels.jpg");
     background-size: cover;
+    filter: drop-shadow(6px 10px 4px #333);
 }
 
 #remote h2 {
-    color: #21609b;
+    color: #21ace2;
     background-color: #1a1918;
     padding: 8px;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+    font-family: "Klavika Web Bold Condensed";
 }
 
 #remote ul {
     list-style-type: none;
     margin: 0px;
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 30px;
+    font-family: "Klavika Web Bold Condensed";
 }
 
 #remote li {
@@ -287,7 +314,7 @@ div#aqua {
 }
 
 #remote a {
-    color: #21609b;
+    color: #21ace2;
     text-decoration: none;
     padding: 10px 50px;
     background-color: #1a1918;
@@ -307,22 +334,26 @@ div#aqua {
     border-radius: 15px;
     background-color: transparent;
 }
-#remote a:visited {
-    color: #21609b;
-}
 
 
 /* ------------- end styles Anton------------- */
 
 /* css footer DAniel */
+.contfooter {
+    /* width: 1016px; */
+    width: 900px;
+    margin: auto;
+    padding: 0;
+}
+
 .site-footer {
     background-color: #26272b;
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
     color: #737373;
-    border-top-left-radius: 125px;
-    border-top-right-radius: 125px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
 }
 
 .site-footer hr {
@@ -389,17 +420,8 @@ div#aqua {
     background-color: #33353d
 }
 
-.copyright {
-    padding: 20px;
-}
 
-.copyright-text {
-    margin: 0
-}
 
-h6 {
-    width: fit-content;
-}
 
 .underline {
     width: 100px;
@@ -434,4 +456,46 @@ h6 {
     100% {
         left: 100px;
     }
+}
+
+/* galerry daniel*/
+#div {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+figure {
+    margin: 0 0 2em;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    font-size: 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 .5em;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:before {
+    content: '-';
+    display: inline;
+    margin-right: 1em;
+}
+
+nav a:first-child {
+    margin-left: 0;
+}
+
+nav a:first-child:before {
+    display: none;
 }
