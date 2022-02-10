@@ -110,6 +110,44 @@
         </div>
 
         <!-- eind html Anton -->
+
+        <div class="container trigger-header">
+
+            <h2 class="trigger">Geschiedenis</h2>
+            <div id="slide-in">
+                <p>jQuery is oorspronkelijk gemaakt in januari 2006 in BarCamp NYC door John Resig, beïnvloed door de
+                    eerdere
+                    cssQuery-bibliotheek van Dean Edwards. Het wordt momenteel onderhouden door een team van
+                    ontwikkelaars onder leiding van Timmy Willison (met de jQuery selector-engine, Sizzle, onder leiding
+                    van
+                    Richard Gibson).</p>
+                <p>jQuery was oorspronkelijk gelicentieerd onder de CC BY-SA 2.5 en werd in 2006 opnieuw in licentie
+                    gegeven
+                    aan de MIT-licentie. Eind 2006 kreeg het een dubbele licentie onder GPL- en MIT-licenties. Omdat dit
+                    tot enige verwarring leidde, werd de GPL in 2012 geschrapt en wordt deze nu alleen gelicentieerd
+                    onder
+                    de
+                    MIT-licentie.</p>
+
+                <h3>populariteit</h3>
+
+                <p> In 2015 werd jQuery gebruikt op 62,7% van de top 1 miljoen websites (volgens BuiltWith) en 17% van
+                    alle
+                    internetwebsites.
+                    In 2017 werd jQuery gebruikt op 69,2% van de top 1 miljoen websites (volgens Libscore).
+                    In 2018 werd jQuery gebruikt op 78% van de top 1 miljoen websites.
+                    In 2019 werd jQuery gebruikt op 80% van de top 1 miljoen websites (volgens BuiltWith), en 74,1% van
+                    de
+                    top 10 miljoen (per W3Techs).
+                    Vanaf april 2021 wordt jQuery gebruikt door 77,8% van de top 10 miljoen websites (volgens W3Techs).
+                </p>
+                <p>jQuery is de beste manier om je website extra functionaliteiten te geven en op te fleuren met zelf
+                    geschreven codes en plugins.
+                    Daarom is het belangrijk om dit goed onder de knie te krijgen.
+                    Je kan dit doen door zelf studie of een van de opleidingen die worden aangeboden.</p>
+            </div>
+        </div>
+
         <div class="container">
             <div class="con">
                 <h3>Wil je jQuery leren?</h3>
@@ -263,6 +301,14 @@
                 .on("mouseleave", function () {
                     $(this).stop().animate({ width: "300px", height: "50px" });
                     $(this).css("background-color", "mediumaquamarine");
+                });
+
+            $(".trigger")
+                .on("mouseover", function () {
+                    $("#slide-in").show();
+                })
+                .on("mouseleave", function () {
+                    $("#slide-in").hide();
                 });
 
             //einde code Christof//
