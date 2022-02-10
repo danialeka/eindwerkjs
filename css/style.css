@@ -1,4 +1,5 @@
 @import url(https://db.onlinewebfonts.com/c/c244e50494b18630a1fa3e5665f09b69?family=Klavika+Web+Bold+Condensed);
+
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -258,7 +259,7 @@ div#aqua {
     border-radius: 50% 50% 10px 10px;
     background-image: url(https://i.picsum.photos/id/903/5616/3744.jpg?hmac=MfpYWi6n8atfdo54KB8Iv9yEWG06TAw9FXMYk5JEuzY);
     z-index: 2;
-    background-blend-mode:normal;
+    background-blend-mode: normal;
 }
 
 .water {
@@ -268,7 +269,7 @@ div#aqua {
     margin: 0px auto;
     margin-top: 100px;
     filter: drop-shadow(6px 10px 4px #333);
-    background-image:url(https://i.picsum.photos/id/677/4288/2848.jpg?hmac=9G3TRArVIg964T44P-E2MTu5_9Fz2juxO9meRramm_4);
+    background-image: url(https://i.picsum.photos/id/677/4288/2848.jpg?hmac=9G3TRArVIg964T44P-E2MTu5_9Fz2juxO9meRramm_4);
 }
 
 #remote {
@@ -451,7 +452,8 @@ div#aqua {
 #div {
     width: 100%;
     max-width: 1000px;
-    margin: 30px auto;
+    margin: 0 auto 50px;
+    padding-top: 0;
 }
 
 figure {
@@ -488,3 +490,5 @@ nav a:first-child {
 nav a:first-child:before {
     display: none;
 }
+
+/* end gallery */
