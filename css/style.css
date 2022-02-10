@@ -314,7 +314,8 @@ div#aqua {
 
 /* css footer DAniel */
 .contfooter {
-    width: 1016px;
+    /* width: 1016px; */
+    width: 900px;
     margin: auto;
     padding: 0;
 }
@@ -429,4 +430,46 @@ div#aqua {
     100% {
         left: 100px;
     }
+}
+
+/* galerry daniel*/
+#div {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+figure {
+    margin: 0 0 2em;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    font-size: 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 .5em;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:before {
+    content: '-';
+    display: inline;
+    margin-right: 1em;
+}
+
+nav a:first-child {
+    margin-left: 0;
+}
+
+nav a:first-child:before {
+    display: none;
 }
