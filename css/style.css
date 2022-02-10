@@ -141,6 +141,7 @@ hr {
     color: blue;
     text-align: center;
     padding: 25px 0;
+    cursor: pointer;
 }
 
 #slide-in {
