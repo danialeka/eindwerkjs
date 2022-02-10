@@ -52,6 +52,10 @@
             font-size: 18px;
         }
 
+        nav ul li a:hover {
+            color: #DDD;
+        }
+
         .button {
             text-align: center;
             margin-top: -10px;
@@ -68,8 +72,8 @@
         #divSnow {
             background-size: cover;
             background-color: rgb(12, 12, 12);
-            width: 1000px;
-            height: 580px;
+            width: 800px;
+            height: 400px;
             margin: 0px auto;
             border: #222 solid 20px;
             border-radius: 10px;
@@ -84,6 +88,7 @@
             margin-top: 50px;
             padding: 20px 60px;
             border-radius: 20px;
+            margin-bottom: 50px;
         }
 
         #content h1 {
@@ -104,18 +109,21 @@
         </ul>
     </nav>
     <div id="divSnow"
-        style="background-image:url(https://i.picsum.photos/id/724/5472/3648.jpg?hmac=HumH1kM_MX4ch7BLclcLo6g7aQsaObi-kzKAvcJPHoQ);">
+        style="background-image:url(https://i.picsum.photos/id/730/5184/3456.jpg?hmac=5scRgIfoPtFdq64LEP8ZEqKHopIgUOh6Ou2PXO7cp9w);">
     </div>
     <div class="button"><button id="weer">Sneeuwverwachting</button></div>
     <div id="content">
-        <h1>Sneeuwverwachting</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
-            inventore?
-            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        <h1>Sneeuw Effect</h1>
+        <p>
+            WebSnowjq.Js is a jQuery plugin made using HTML5 and javascript
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
-            inventore?
-            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        <p> to create a virtual snow fall on a web page.
+        </p>
+        <p>
+            WebSnowjq.Js is compatible with all browsers supporting HTML5.
+        </p>
+        <p> No effort is required to integrate
+            WebSnowjq.js in a website.
         </p>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -123,9 +131,10 @@
     <script src="js/Websnowjq.js"></script>
     <script>
         $(document).ready(function () {
-            $("#divSnow").websnowjq({ snowFlakes: 100 })
+            $("#divSnow").websnowjq({ snowFlakes: 80 })
+            $("#divSnow").websnowjq({ snowFlakes: 20 })
             $("#weer").focus(function () {
-                $("#divSnow").hide(800)
+                $("#divSnow").hide(1200)
             });
         });
     </script>
