@@ -82,13 +82,8 @@ hr {
 }
 
 .box-container {
-<<<<<<< HEAD
     width: 350px;
     margin: auto;
-=======
-    width: 450px;
-    margin: 50px auto 0;
->>>>>>> aaf163dd0cd60b8d0ee1207fd52e76503c39e91f
 }
 
 .box-container div {
