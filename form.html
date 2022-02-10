@@ -13,18 +13,18 @@
 
 </head>
 
-<body>
+<body style="background-color: #3366cc;">
     <div class="container">
         <h1>Inschrijvings formulier</h1>
         <form id="formulier" method="post">
-            <p><label class="label" for="voornaam">Voornaam <span>(verplicht veld: min 3 karakters)</span> </label>
+            <p><label class="label" for="voornaam">Voornaam <span>*</span> </label>
                 <input class="tekstveld" type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required>
             </p>
-            <p><label class="label" for="achternaam">Achternaam <span>(verplicht veld)</span> </label>
+            <p><label class="label" for="achternaam">Achternaam <span>*</span> </label>
                 <input class="tekstveld" type="text" name="achternaam" id="achternaam" placeholder="Achternaam"
                     required>
             </p>
-            <p><label class="label" for="email">E-mail <span>(verplicht veld)</span></label>
+            <p><label class="label" for="email">E-mail <span>*</span></label>
                 <input class="tekstveld" type="email" name="email" id="email" placeholder="voorbeeld@blabla.com"
                     required>
             </p>
@@ -46,6 +46,7 @@
             </select><br><br>
             <p><label for="bericht">Vragen/opmerkingen:</label></p>
             <textarea name="bericht" id="bericht" cols="70" rows="10"></textarea>
+            <p><span>*</span> Verplicht veld</p>
             <p><a href="#dialogBox"></a><input class="border-knop" type="submit" value="Inschrijven"></p>
         </form>
     </div>

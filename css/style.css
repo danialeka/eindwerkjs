@@ -8,7 +8,6 @@ html {
 body {
     margin: 0;
     font-family: helvetica;
-
 }
 
 .maincontainer {
@@ -21,7 +20,7 @@ body {
 .container {
     width: 900px;
     margin: auto;
-    /* padding: 50px 0; */
+    padding: 50px 0; 
     background-color: #1E2E3B;
 }
 
@@ -235,7 +234,7 @@ form {
 }
 
 form .label {
-    width: 100px;
+    width: 110px;
 }
 
 form .tekstveld {
@@ -247,6 +246,10 @@ form .tekstveld {
 
 form textarea {
     border-radius: 5px;
+}
+
+form span {
+    color: red;
 }
 
 .border-knop {
