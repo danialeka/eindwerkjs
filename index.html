@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JqueryPromotion</title>
+    <title>jQueryPromotion</title>
 
 
     <link href="css/jquery-gallery.css" rel="stylesheet">
@@ -19,9 +19,9 @@
     <article class="hero-image">
         <aside class="hero-image-opacity">
             <div class="hero-image-content">
-                <h2 class="hero-image-title">
+                <h1 class="hero-image-title">
                     <img id="fotosola" src="images/jquery-4.svg" alt="logo"> jQuery
-                </h2>
+                </h1>
                 <a href="#" class="popup_open btn">CLICK ME</a>
             </div>
         </aside>
@@ -341,10 +341,10 @@
 
             $(".trigger")
                 .on("mouseover", function () {
-                    $("#slide-in").show();
+                    $("#slide-in").stop().fadeIn();
                 })
                 .on("mouseleave", function () {
-                    $("#slide-in").hide();
+                    $("#slide-in").stop().delay(10000).fadeOut();
                 });
 
             //einde code Christof//
