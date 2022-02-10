@@ -12,8 +12,8 @@ body {
 .maincontainer {
 
     background: url("../images/pexels-mudassir-slim.png");
-    /* background-size: cover; */
-    background-repeat: repeat;
+    background-size: cover;
+    /* background-repeat: repeat; */
 }
 
 .container {
@@ -326,8 +326,8 @@ div#aqua {
     font-size: 15px;
     line-height: 24px;
     color: #737373;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
 }
 
 .site-footer hr {
