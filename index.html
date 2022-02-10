@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JqueryPromotion</title>
+
+
     <link href="css/jquery-gallery.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
 </head>
 
 <body>
@@ -52,7 +55,28 @@
                 </div>
             </div>
         </div>
-
+        <div class="container">
+            <div data-gallery="simple" data-loop="true" data-interval="2" id="div">
+                <figure id="image-1">
+                    <img src="images/jquery9.png">
+                </figure>
+                <figure id="image-2">
+                    <img src="images/jquery8.png">
+                </figure>
+                <figure id="image-3">
+                    <img src="images/jquery7.png">
+                </figure>
+                <figure id="image-4">
+                    <img src="images/jquery10.png">
+                </figure>
+                <nav>
+                    <a href="#image-1"></a>
+                    <a href="#image-2"></a>
+                    <a href="#image-3"></a>
+                    <a href="#image-4"></a>
+                </nav>
+            </div>
+        </div>
         <div class="container">
             <h2>jQuery, Wat is het?</h2>
             <div id="accordion">
@@ -89,65 +113,33 @@
                 <input id="knop_verberg" type="button" value="Verberg voorbeeld slider" />
             </section>
         </div>
+
+        <!-- begin html Anton -->
         <div class="container">
             <div id="aqua" class=".clearfix">
                 <div id="remote">
-                    <h2>Effecten met jQuery</h2>
+                    <h2>Effecten Met jQuery</h2>
                     <ul>
-                        <li><a href="water_effect3.html" target="_blank" class="pulsate">Water effect met WebGL</a></li>
-                        <li><a href="water_effect4.html" target="_blank" class="pulsate">Water effect met WebGL</a></li>
-                        <li><a href="snow_effect2.html" target="_blank" class="pulsate">Sneeuw effect jQ</a></li>
-                        <li><a href="snow_effect3.html" target="_blank" class="pulsate">Sneeuw effect jQ</a></li>
+                        <li><a href="water_effect3.html" target="_blank" class="pulsate">Water Effect Met WebGL</a></li>
+                        <li><a href="water_effect4.html" target="_blank" class="pulsate">Water Effect Met WebGL</a></li>
+                        <li><a href="snow_effect2.html" target="_blank" class="pulsate">Sneeuw Effect Met jQ</a></li>
+                        <li><a href="snow_effect3.html" target="_blank" class="pulsate">Sneeuw Effect Met jQ</a></li>
                     </ul>
                 </div>
                 <div class="bubble">
                     <div id="divSnow"></div>
                     <div class="tekst">
-                        My bubble 2022
+                        My Bubble 2022
                     </div>
                 </div>
+
+                <div class="water">
+                </div>
+                <div class=" error"></div>
             </div>
         </div>
 
         <!-- eind html Anton -->
-
-        <div class="container trigger-header">
-
-            <h2 class="trigger">Geschiedenis</h2>
-            <div id="slide-in">
-                <p>jQuery is oorspronkelijk gemaakt in januari 2006 in BarCamp NYC door John Resig, beïnvloed door de
-                    eerdere
-                    cssQuery-bibliotheek van Dean Edwards. Het wordt momenteel onderhouden door een team van
-                    ontwikkelaars onder leiding van Timmy Willison (met de jQuery selector-engine, Sizzle, onder leiding
-                    van
-                    Richard Gibson).</p>
-                <p>jQuery was oorspronkelijk gelicentieerd onder de CC BY-SA 2.5 en werd in 2006 opnieuw in licentie
-                    gegeven
-                    aan de MIT-licentie. Eind 2006 kreeg het een dubbele licentie onder GPL- en MIT-licenties. Omdat dit
-                    tot enige verwarring leidde, werd de GPL in 2012 geschrapt en wordt deze nu alleen gelicentieerd
-                    onder
-                    de
-                    MIT-licentie.</p>
-
-                <h3>populariteit</h3>
-
-                <p> In 2015 werd jQuery gebruikt op 62,7% van de top 1 miljoen websites (volgens BuiltWith) en 17% van
-                    alle
-                    internetwebsites.
-                    In 2017 werd jQuery gebruikt op 69,2% van de top 1 miljoen websites (volgens Libscore).
-                    In 2018 werd jQuery gebruikt op 78% van de top 1 miljoen websites.
-                    In 2019 werd jQuery gebruikt op 80% van de top 1 miljoen websites (volgens BuiltWith), en 74,1% van
-                    de
-                    top 10 miljoen (per W3Techs).
-                    Vanaf april 2021 wordt jQuery gebruikt door 77,8% van de top 10 miljoen websites (volgens W3Techs).
-                </p>
-                <p>jQuery is de beste manier om je website extra functionaliteiten te geven en op te fleuren met zelf
-                    geschreven codes en plugins.
-                    Daarom is het belangrijk om dit goed onder de knie te krijgen.
-                    Je kan dit doen door zelf studie of een van de opleidingen die worden aangeboden.</p>
-            </div>
-        </div>
-
         <div class="container">
             <div class="con">
                 <h3>Wil je jQuery leren?</h3>
@@ -161,7 +153,7 @@
 
         <footer class="site-footer">
 
-            <div class="container">
+            <div class="contfooter">
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
                         <h6>JQUERY <div class="underline"><span></span></div>
@@ -201,8 +193,8 @@
 
                 </div>
                 <hr>
-            </div>
-            <div class="container copyright">
+
+
                 <div class="row">
                     <div class="col-md-8 col-sm-6 col-xs-12">
                         <p class="copyright-text">Copyright &copy; 2022, CVO DE VERDIEPING FUW
@@ -210,13 +202,14 @@
                         </p>
                     </div>
                 </div>
-            </div>
+
         </footer>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js">
     </script>
+    <script src="js/jquery.simple-gallery.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="dist/jquery.random-fade-in.js"></script>
@@ -288,44 +281,30 @@
             $.getJSON("json/team.json",
                 function (data) {
                     $.each(data.team, function (i, team) {
-                        let members = "<li>" + " " + team.voornaam + " " + team.achternaam + "</li>";
+                        let members = "<li>" + " " + team.voornaam + " " + team.achternaam +
+                            "</li>";
                         $(".team_members").append(members);
                     });
                 });
 
             $(".animatie_knop")
                 .on("mouseenter", function () {
-                    $(this).stop().animate({ width: "400px", height: "80px" });
+                    $(this).stop().animate({
+                        width: "400px",
+                        height: "80px"
+                    });
                     $(this).css("background-color", "purple");
                 })
                 .on("mouseleave", function () {
-                    $(this).stop().animate({ width: "300px", height: "50px" });
+                    $(this).stop().animate({
+                        width: "300px",
+                        height: "50px"
+                    });
                     $(this).css("background-color", "mediumaquamarine");
                 });
 
-            $(".trigger")
-                .on("mouseover", function () {
-                    $("#slide-in").show();
-                })
-                .on("mouseleave", function () {
-                    $("#slide-in").hide();
-                });
-
             //einde code Christof//
-            //begin code Anton
-            $(".pulsate")
-                .on("mouseenter", function () {
-                    $(this).css("border", "1px solid #09F");
-                })
-                .on("mouseleave", function () {
-                    $(this).css("border", "none");
-                });
-            $("#divSnow").websnowjq({
-                snowFlakes: 80
-            });
 
-
-            //einde code Anton
             //begin code Daniel
             $('#popup').popup({
                 pagecontainer: 'body',
@@ -346,6 +325,20 @@
             }, 800);
 
             //einde code Daniel
+
+
+            //begin code Anton
+
+            $("#divSnow").websnowjq({ snowFlakes: "80" });
+            $(".pulsate").pulsate({ color: "#09F" });
+            //$(".pulse").pulsate({ color: "#09F" });
+            $('.water').ripples({
+                resolution: 256,
+                dropRadius: 20,
+                perturbance: 0.02,
+                interactive: true,
+            });
+            //einde code Anton
 
         });
     </script>

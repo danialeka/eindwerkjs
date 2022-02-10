@@ -11,6 +11,7 @@ body {
 }
 
 .maincontainer {
+
     background: url("../images/pexels-mudassir-slim.png");
     background-size: cover;
     /* background-repeat: repeat; */
@@ -24,9 +25,9 @@ body {
 }
 
 .con {
-    margin-top: 50px;
+    margin-top: 250px;
     text-align: center;
-    color: beige;
+    color: white;
 }
 
 .container h2 {
@@ -114,18 +115,6 @@ body {
     clear: both;
     content: '';
     display: block;
-}
-
-.trigger-header h2 {
-    background-color: white;
-    color: blue;
-    text-align: center;
-}
-
-#slide-in {
-    display: none;
-    width: 800px;
-    margin-left: 200px;
 }
 
 /* ********** HeroImage (DANIEL)********** */
