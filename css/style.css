@@ -117,6 +117,20 @@ body {
     display: block;
 }
 
+.trigger-header h2 {
+    background-color: white;
+    color: blue;
+    text-align: center;
+}
+
+#slide-in {
+    display: none;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 200px;
+    color: white;
+}
+
 /* ********** HeroImage (DANIEL)********** */
 .hero-image {
     background-repeat: no-repeat;
