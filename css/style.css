@@ -1,5 +1,3 @@
-@import url(https://db.onlinewebfonts.com/c/c244e50494b18630a1fa3e5665f09b69?family=Klavika+Web+Bold+Condensed);
-
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -19,7 +17,7 @@ body {
 .container {
     width: 900px;
     margin: auto;
-    padding: 50px 25px; 
+    padding: 50px 25px;
     background-color: #1E2E3B;
 }
 
@@ -184,18 +182,27 @@ a.btn {
     border-radius: 0.5rem;
     padding: 1rem;
     display: inline-block;
-    width: 150px;
+    width: fit-content;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     color: white;
     background-color: #0868AC;
+    margin: 0 20px;
 }
 
 a.btn:hover {
     background-color: #1E2E3B;
     color: white;
 }
+
+.popup_open:visited {
+    background-color: #1E2E3B;
+    color: white;
+}
+
+
+
 
 .popup_content {
     margin: 10px;
@@ -323,32 +330,25 @@ div#aqua {
 }
 
 #remote h2 {
-    color: #21ace2;
-    background-color: #1a1918;
+    color: #0868AC;
+    background-color: white;
     padding: 8px;
     border-radius: 20px 20px 0px 0px;
-    font-family: "Klavika Web Bold Condensed";
+
 }
 
 #remote ul {
-    list-style-type: none;
+
     margin: 0px;
-    font-size: 20px;
+
     padding-top: 30px;
-    font-family: "Klavika Web Bold Condensed";
+
 }
 
 #remote li {
-    margin: 50px 0px;
+    margin: 20px 0px;
 }
 
-#remote a {
-    color: #21ace2;
-    text-decoration: none;
-    padding: 10px 50px;
-    background-color: #1a1918;
-    border-radius: 25px;
-}
 
 #remote a:hover {
     color: #FFF;
@@ -381,6 +381,7 @@ div#aqua {
     color: #737373;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
+    margin-top: -50px;
 }
 
 .site-footer hr {
@@ -486,6 +487,10 @@ div#aqua {
     max-width: 1000px;
     margin: 50px auto;
     padding-top: 50px;
+}
+
+#div .btn {
+    margin: auto;
 }
 
 figure {
