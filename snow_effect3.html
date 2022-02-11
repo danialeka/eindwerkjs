@@ -6,13 +6,13 @@
     <meta name="author" content="A.J. Velthuizen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery snow plugin demo</title>
-
-
     <style>
+    @import url(https://db.onlinewebfonts.com/c/c244e50494b18630a1fa3e5665f09b69?family=Klavika+Web+Bold+Condensed);
         body {
             background-image: url("images/bg_snow.png");
             background-color: #445977;
             background-repeat: repeat-x;
+            font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
             text-align: center;
             margin: 0px;
             width: 100%;
@@ -91,14 +91,26 @@
         }
 
         #content {
-            color: #CCC;
+            color: #BBB;
             background-color: rgb(12, 12, 12);
-            width: 800px;
-            height: 500px;
-            margin: 0px auto;
-            margin-top: 50px;
-            padding: 20px 60px;
+            width: 650px;
+            height: 300px;
+            margin: 50px auto;
             border-radius: 20px;
+        }
+
+        #content h1 {
+            font-family: "Klavika Web Bold Condensed";
+            color: #1a1918;
+            background-color: #CCC;
+            padding: 5px;
+            border-radius: 20px 20px 0px 0px;
+            margin-bottom: 50px;
+        }
+        hr{
+            border-top: #21609b solid 1px;
+            width: 30%;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -133,16 +145,17 @@
         <p> No effort is required to integrate
             WebSnowjq.js in a website.
         </p>
+        <hr>
     </div>
     <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/Websnowjq.js"></script>
     <script>
 $(document).ready(function(){
-  $("#start").click(function(){
+  $("#start").focus(function(){
             $("#divSnow").websnowjq({ snowFlakes: 40 }),
             $("#divSnow").websnowjq({ snowFlakes: 20 })
   });
-  $("#stop").click(function(){
+  $("#stop").focus(function(){
     location.reload();
   });
 });
