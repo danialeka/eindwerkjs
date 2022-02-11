@@ -1,0 +1,21 @@
+bronnen
+-------
+
+- voor de plugins:
+
+https://www.jqueryscript.net/animation/jQuery-Plugin-To-Fade-In-Html-Elements-Random-Fade-In.html#google_vignette
+
+https://www.jqueryscript.net/slideshow/Automatic-Gallery-Slideshow.html
+
+https://www.jqueryscript.net/form/multi-select-tree.html
+
+https://code.tutsplus.com/tutorials/easy-form-validation-with-jquery--cms-33096
+
+
+- algemeen:
+
+De cursus
+Algemeen opzoekwerk op google
+Algemene kennis in mijn bovenkamer 
+
+
