@@ -9,7 +9,6 @@ body {
 }
 
 .maincontainer {
-
     background: url("../images/pexels-mudassir-slim.png");
     background-size: cover;
 }
@@ -152,7 +151,6 @@ hr {
     color: white;
 }
 
-/* ********** HeroImage (DANIEL)********** */
 .hero-image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,7 +167,6 @@ hr {
     align-items: center;
     text-align: center;
     background-color: rgba(11, 105, 109, 0.472);
-
 }
 
 .hero-image-title {
@@ -177,7 +174,6 @@ hr {
     font-style: italic;
     color: white;
     font-weight: bold;
-
 }
 
 a.btn {
@@ -202,9 +198,6 @@ a.btn:hover {
     background-color: #1E2E3B;
     color: white;
 }
-
-
-
 
 .popup_content {
     margin: 10px;
@@ -265,8 +258,6 @@ form span {
     border: 1px solid black;
     border-radius: 5px;
 }
-
-/* ------------- start styles Anton ------------- */
 
 div#aqua {
     text-align: center;
@@ -336,7 +327,6 @@ div#aqua {
     background-color: white;
     padding: 8px;
     border-radius: 20px 20px 0px 0px;
-
 }
 
 #remote ul {
@@ -366,9 +356,6 @@ div#aqua {
     background-color: transparent;
 }
 
-/* ------------- end styles Anton------------- */
-
-/* css footer DAniel */
 .contfooter {
     width: 900px;
     margin: auto;
@@ -486,7 +473,6 @@ div#aqua {
     margin: 20px;
 }
 
-/* galerry daniel*/
 #div {
     width: 100%;
     max-width: 1000px;
