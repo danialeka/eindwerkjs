@@ -481,6 +481,10 @@ div#aqua {
     }
 }
 
+.buttons {
+    margin: 20px;
+}
+
 /* galerry daniel*/
 #div {
     width: 100%;
