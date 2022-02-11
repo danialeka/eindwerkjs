@@ -39,6 +39,8 @@ h1 {
 
 .container h2 {
     color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 hr {
@@ -136,7 +138,7 @@ hr {
 
 .trigger-header h2 {
     background-color: white;
-    color: blue;
+    color: #0868AC;
     text-align: center;
     padding: 25px 0;
     cursor: pointer;
@@ -406,7 +408,7 @@ div#aqua {
 }
 
 .site-footer a:hover {
-    color: #3366cc;
+    color: #0868AC;
     text-decoration: none;
 }
 
