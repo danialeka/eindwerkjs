@@ -50,7 +50,7 @@ hr {
 }
 
 .show_hide {
-    margin-left: 400px;
+    margin-left: 300px;
 }
 
 .inhoud-1,
@@ -63,7 +63,7 @@ hr {
 }
 
 .accordioncontainer {
-    margin: 50px 0;
+    padding-bottom: 50px;
 }
 
 #accordion li {
@@ -78,6 +78,7 @@ hr {
     border: 1px solid black;
     background-color: green;
     cursor: pointer;
+    margin: 10px 0;
 }
 
 .box-container {
@@ -146,9 +147,9 @@ hr {
 
 #slide-in {
     display: none;
+    margin: auto;
     width: 800px;
     margin-top: 50px;
-    margin-left: 200px;
     color: white;
 }
 
