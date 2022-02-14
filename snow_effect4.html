@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="A.J. Velthuizen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery snow plugin demo</title>
+
+    <style>
+        body {
+            background-image: url("images/bg_snow.png");
+            background-color: #445977;
+            background-repeat: repeat-x;
+            text-align: center;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        div#logo {
+            float: left;
+            padding: 10px;
+            width: auto;
+            height: auto;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav ol {
+            margin: 0px;
+            padding-top: 9px;
+        }
+
+        nav ol li {
+            display: inline;
+        }
+
+        nav ol li a {
+            padding: 10px 40px;
+            color: #21609b;
+            background-color: #1a1918;
+            border-radius: 3px 3px 30px 30px;
+            text-decoration: none;
+            text-transform: lowercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+
+        .text {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: lowercase;
+            color: aqua;
+            margin-top: -30px;
+            text-align: center;
+        }
+
+        #divSnow {
+            background-size: cover;
+            background-color: rgb(12, 12, 12);
+            width: 650px;
+            height: 450px;
+            margin: 0px auto;
+            border-top: #DDD solid 6px;
+            border-bottom: #444 solid 40px;
+            border-radius: 50% 50% 10px 10px;
+        }
+
+        #content {
+            color: #CCC;
+            background-color: rgb(12, 12, 12);
+            width: 800px;
+            height: 500px;
+            margin: 0px auto;
+            margin-top: 50px;
+            padding: 20px 60px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logo"><a href="index.html#remote"><img src="images/jquery_logo.png" alt="jQuery logo"></a></div>
+    <nav>
+        <ol>
+            <li><a href="snow_effect2.html">Sneeuw effect 1</a></li>
+            <li><a href="snow_effect3.html">Sneeuw effect 2</a></li>
+            <li><a href="snow_effect4.html">Sneeuw effect 3</a></li>
+        </ol>
+    </nav>
+    <div id="divSnow"
+        style="background-image:url(https://i.picsum.photos/id/903/5616/3744.jpg?hmac=MfpYWi6n8atfdo54KB8Iv9yEWG06TAw9FXMYk5JEuzY);">
+    </div>
+    <div class="text">My bubble 2022</div>
+    <div id="content">
+        <h1>Bubbel 2022</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
+            inventore?
+            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
+            inventore?
+            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        </p>
+    </div>
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/Websnowjq.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#divSnow").websnowjq({ snowFlakes: 40 })
+            $("#divSnow").websnowjq({ snowFlakes: 20 });
+        });
+    </script>
+</body>
+
+</html>
