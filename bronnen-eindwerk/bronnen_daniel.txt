@@ -1,0 +1,25 @@
+Plugings:
+
+
+-Popup overlay
+
+https://dev.vast.com/jquery-popup-overlay/
+
+- shake effect:
+
+https://api.jqueryui.com/shake-effect/
+
+==========================================
+Andere effects: 
+
+-Animate logo
+-led title
+-line with light in footer
+-scroll background
+-gallery infinit
+
+inspiration: Youtube, google, animation with css, animation in js
+
+
+
+

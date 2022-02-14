@@ -6,20 +6,17 @@
     <meta name="author" content="A.J. Velthuizen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery snow plugin demo</title>
-
     <style>
+    @import url(https://db.onlinewebfonts.com/c/c244e50494b18630a1fa3e5665f09b69?family=Klavika+Web+Bold+Condensed);
         body {
-            background-image: url("images/druppels.jpg");
-            background-color: #DDD;
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
+            background-image: url("images/bg_snow.png");
+            background-color: #445977;
+            background-repeat: repeat-x;
+            font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
             text-align: center;
             margin: 0px;
             width: 100%;
             height: 100%;
-            margin: 0px auto;
-            text-align: center;
         }
 
         div#logo {
@@ -54,33 +51,66 @@
             font-size: 18px;
         }
 
+        nav ul li a:hover {
+            color: #DDD;
+        }
+        
+        .text {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: lowercase;
+            color: aqua;
+            margin-top: -40px;
+            text-align: center;
+        }
+        .text button {
+            padding: 4px 18px;
+            color: #CCC;
+            background-color: #1a1918;
+            border-radius: 50%;
+            text-decoration: none;
+            text-transform: lowercase;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            margin: 0px;
+            line-height: 24px;
+        }
+        .text button:hover {
+            color: #F00;
+        }
         #divSnow {
             background-size: cover;
             background-color: rgb(12, 12, 12);
-            width: 100%;
-            height: 480px;
+            width: 650px;
+            height: 450px;
             margin: 0px auto;
-            border-bottom: #DDD solid 3px;
-            border-top: #222 solid 3px;
+            border-top: #DDD solid 6px;
+            border-bottom: #333 solid 44px;
+            border-radius: 50% 50% 10px 10px;
         }
 
         #content {
-            background-color: rgba(250, 246, 246, 0.9);
-            color: #1a1918;
-            width: 800px;
-            height: 400px;
-            margin: 0px auto;
-            text-align: center;
-            margin-top: -77px;
+            color: #BBB;
+            background-color: rgb(12, 12, 12);
+            width: 650px;
+            height: 300px;
+            margin: 50px auto;
             border-radius: 20px;
-            margin-bottom: 50px;
         }
 
         #content h1 {
-            color: #21609b;
-            background-color: #1a1918;
-            padding: 8px;
+            font-family: "Klavika Web Bold Condensed";
+            color: #1a1918;
+            background-color: #CCC;
+            padding: 5px;
             border-radius: 20px 20px 0px 0px;
+            margin-bottom: 50px;
+        }
+        hr{
+            border-top: #21609b solid 1px;
+            width: 30%;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -96,8 +126,11 @@
         </ul>
     </nav>
     <div id="divSnow"
-        style="background-image:url(https://i.picsum.photos/id/684/3872/2178.jpg?hmac=_kCER0s1iGCf3tNMsJPkghB8wokudDiVHCbS-npOst8"
-        ;>
+        style="background-image:url(https://i.picsum.photos/id/724/5472/3648.jpg?hmac=HumH1kM_MX4ch7BLclcLo6g7aQsaObi-kzKAvcJPHoQ);">
+    </div>
+    <div class="text">
+        <button id="start">start</button> 
+        <button id="stop">stop</button>
     </div>
     <div id="content">
         <h1>Sneeuw Effect</h1>
@@ -112,14 +145,20 @@
         <p> No effort is required to integrate
             WebSnowjq.js in a website.
         </p>
+        <hr>
     </div>
     <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/Websnowjq.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#divSnow").websnowjq({ snowFlakes: 50 }),
-                $("#divSnow").websnowjq({ snowFlakes: 70 })
-        });
+$(document).ready(function(){
+  $("#start").focus(function(){
+            $("#divSnow").websnowjq({ snowFlakes: 40 }),
+            $("#divSnow").websnowjq({ snowFlakes: 20 })
+  });
+  $("#stop").focus(function(){
+    location.reload();
+  });
+});
     </script>
 </body>
 

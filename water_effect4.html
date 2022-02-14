@@ -6,14 +6,15 @@
     <meta name="author" content="A.J. Velthuizen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery water plugin demo</title>
-
     <style>
+    @import url(https://db.onlinewebfonts.com/c/c244e50494b18630a1fa3e5665f09b69?family=Klavika+Web+Bold+Condensed);
         body {
             background-image: url("images/kolk.jpg");
             background-color: #DDD;
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
             text-align: center;
             margin: 0px;
             width: 100%;
@@ -52,10 +53,16 @@
             font-size: 18px;
         }
 
+        nav ul li a:hover {
+            color: #DDD;
+        }
+
         .lelie {
             margin-top: -395px;
             margin-left: 280px;
             text-align: center;
+            z-index: 2;
+            position: relative;
         }
 
         .water {
@@ -63,21 +70,46 @@
             width: 1000px;
             height: 600px;
             margin: 0px auto;
+            z-index: 1;
+        }
+
+        button {
+            padding: 5px 25px;
+            color: #1a1918;
+            background-color: #DDD;
+            border-radius: 50%;
+            text-decoration: none;
+            text-transform: lowercase;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            margin: 0px;
+            line-height: 24px;
+        }
+                
+        button:hover {
+            color: #21609b;
+            background-color: #DDD;
         }
 
         #content {
             color: #AAA;
             background-color: #1a1918;
             width: 880px;
-            margin: 0px auto;
-            margin-top: 50px;
+            margin: 50px auto;
             padding: 20px 60px 80px 60px;
             line-height: 30px;
         }
 
         #content h1 {
+            font-family: "Klavika Web Bold Condensed";
             color: #21609b;
-            margin: 0px;
+        }
+
+        hr{
+            border-top: #777 solid 2px;
+            width: 50%;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -98,12 +130,14 @@
     <div class="lelie"><img src="images/lelie.png" alt="lelie"></div>
     <div class=" error"></div>
     <div id="content">
+        <button class="flush">flush it</button> <button class="fill">refill</button>
         <h1>Water Golf Effect Met WebGL</h1>
         <p>&quot;Ripples&quot; is a fancy jQuery plugin that creates a water ripple animation following the mouse cursor
             on an Html
             element based on WebGL. Currently works with modern browsers that support at least one of the following:
             WebGL, OES_texture_float extension, OES_texture_float_linear extension.
         </p>
+        <hr>
     </div>
     <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.ripples.js"></script>
@@ -120,6 +154,14 @@
             catch (e) {
                 $('.error').show().text(e);
             }
+            });
+            $( ".flush" ).focus(function() {
+            $( ".water, .lelie" ).slideUp( "slow", function() {
+            });
+            $( ".fill" ).click(function() {
+            $( ".water, .lelie" ).slideDown( "slow", function() {
+            });
+            });
         });
     </script>
 </body>

@@ -6,14 +6,15 @@
     <meta name="author" content="A.J. Velthuizen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery water plugin demo</title>
-
     <style>
+    @import url(https://db.onlinewebfonts.com/c/c244e50494b18630a1fa3e5665f09b69?family=Klavika+Web+Bold+Condensed);
         body {
             background-image: url("images/water.jpg");
-            background-color: #CCC;
+            background-color: #1a1918;
             background-size: cover;
-            background-attachment: fixed;
             background-repeat: no-repeat;
+            background-attachment: scroll;
+            font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
             text-align: center;
             margin: 0px;
             width: 100%;
@@ -28,7 +29,8 @@
         }
 
         nav {
-            margin-bottom: 52px;
+            text-align: center;
+            margin-left: 230px;
         }
 
         nav ul {
@@ -52,68 +54,104 @@
             font-size: 18px;
         }
 
+        nav ul li a:hover {
+            color: #DDD;
+        }
+
         div.image {
-            margin-top: -380px;
+            margin-top: -200px;
             text-align: center;
+            z-index: 2;
+            position: relative;
         }
 
-        .image2 {
-            margin-top: -30px;
+        div.image2 {
+            margin-top: -248px;
             text-align: center;
+            z-index: 2;
+            position: relative;
         }
 
-        .water {
+        div.water {
             background-size: cover;
-            width: 1000px;
-            height: 500px;
+            width: 100%;
+            height: 300px;
             margin: 0px auto;
-            background-image: url("images/water.jpg");
+            background-image: url("https://i.picsum.photos/id/126/4272/2511.jpg?hmac=ex6Jt1byMjaCJ6oNqfxNAE-6QIxa6PMIVp0Vwac3GcA");
+            z-index: 1;
+        }
+
+        button {
+            padding: 3px 30px;
+            color: #CCC;
+            background-color: #1a1918;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0px;
+            line-height: 24px;
+        }
+
+        button:hover {
+            color: #FFF;
+            background-color: #21609b;
         }
 
         #content {
             color: #AAA;
             background-color: #1a1918;
             width: 880px;
-            height: 450px;
+            height: 400px;
             margin: 0px auto;
-            margin-top: 220px;
             padding: 20px 60px;
-            border-radius: 20px;
             margin-bottom: 50px;
             line-height: 30px;
+            margin-top: 270px;
+            border-radius: 20px;
         }
 
         #content h1 {
-            color: #21609b;
-            margin: 0px;
+            font-family: "Klavika Web Bold Condensed";
+            color: #AAA;
+        }
+
+        hr{
+            border-top: #21609b solid 3px;
+            width: 50%;
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
-    <div id="logo"><a href="index.html#remote"><img src="images/jquery_logo.png" alt="jQuery logo"></a></div>
-    <nav>
-        <ul>
-            <li><a href="water_effect3.html">Water effect 1</a></li>
-            <li><a href="water_effect4.html">Water effect 2</a></li>
-            <li><a href="snow_effect2.html">Sneeuw effect 1</a></li>
-            <li><a href="snow_effect3.html">Sneeuw effect 2</a></li>
-        </ul>
-    </nav>
-    <div class="water"
-        style="background-image:url(https://i.picsum.photos/id/126/4272/2511.jpg?hmac=ex6Jt1byMjaCJ6oNqfxNAE-6QIxa6PMIVp0Vwac3GcA)">
+
+    <div class="water">
     </div>
-    <div class="image"><a href="index.html#remote"><img src="images/jquery_logo_xl.png" alt="jQuery logo"></a></div>
-    <div class="image2"><img src="images/nul_euri.png" alt="nul euro"></div>
-    <div class=" error"></div>
-    <div id="content">
-        <h1>Water Golf Effect Met WebGL</h1>
-        <p>&quot;Ripples&quot; is a fancy jQuery plugin that creates a water ripple animation following the mouse cursor
-            on an Html
-            element based on WebGL. Currently works with modern browsers that support at least one of the following:
-            WebGL, OES_texture_float extension, OES_texture_float_linear extension.
-        </p>
-    </div>
+        <div class=" error"></div>
+       <div class="image">
+            <a href="index.html#remote"><img src="images/jquery_logo_xl.png" alt="jQuery logo"></a>
+        </div>
+        <div class="image2">
+            <nav>
+                <ul>
+                    <li><a href="water_effect3.html">Water effect 1</a></li>
+                    <li><a href="water_effect4.html">Water effect 2</a></li>
+                    <li><a href="snow_effect2.html">Sneeuw effect 1</a></li>
+                    <li><a href="snow_effect3.html">Sneeuw effect 2</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="content">
+                    <button id="uit">uit</button> <button id="aan">aan</button>
+            <h1>Water Golf Effect Met WebGL</h1>
+            <p>&quot;Ripples&quot; is a fancy jQuery plugin that creates a water ripple animation following the mouse cursor
+                on an Html
+                element based on WebGL. Currently works with modern browsers that support at least one of the following:
+                WebGL, OES_texture_float extension, OES_texture_float_linear extension.
+            </p>
+            <hr>
+        </div>
     <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.ripples.js"></script>
     <script>
@@ -129,7 +167,13 @@
             catch (e) {
                 $('.error').show().text(e);
             }
-        });
+            $("#uit").focus(function () {
+            $(".water").hide(800);
+            });
+            $("#aan").focus(function(){
+                location.reload();
+            });
+    });
     </script>
 
 </body>

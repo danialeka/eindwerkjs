@@ -6,18 +6,19 @@
     <meta name="author" content="A.J. Velthuizen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery snow plugin demo</title>
-
     <style>
+    @import url(https://db.onlinewebfonts.com/c/c244e50494b18630a1fa3e5665f09b69?family=Klavika+Web+Bold+Condensed);
         body {
-            background-image: url("images/snow.jpg");
+            background-image: url("images/druppels.jpg");
+            background-color: #DDD;
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            background-color: #DDD;
+            font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
             text-align: center;
             margin: 0px;
-            width: 100%;
-            height: 100%;
+            margin: 0px auto;
+            text-align: center;
         }
 
         div#logo {
@@ -52,43 +53,71 @@
             font-size: 18px;
         }
 
-        .button {
-            text-align: center;
-            margin-top: -10px;
+        nav ul li a:hover {
+            color: #DDD;
         }
 
-        #weer {
+        .text {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: lowercase;
             color: aqua;
-            background-color: #900;
-            padding: 5px 20px 8px 20px;
+            margin-top: 0px;
+            text-align: right;
+            margin-right: 100px;
+        }
+        .text button {
+            padding: 4px 18px;
+            color: #CCC;
+            background-color: #1a1918;
             border-radius: 5px;
+            text-decoration: none;
+            text-transform: lowercase;
+            font-weight: bold;
+            font-size: 14px;
             cursor: pointer;
+            margin: 0px;
+            line-height: 24px;
+        }
+        .text button:hover {
+            color: #FFF;
+            background-color: #F00;
         }
 
         #divSnow {
             background-size: cover;
-            background-color: rgb(12, 12, 12);
-            width: 1000px;
-            height: 580px;
+            background-color: #21609b;
+            width: 100%;
+            height: 480px;
             margin: 0px auto;
-            border: #222 solid 20px;
-            border-radius: 10px;
+            border-bottom: #DDD solid 2px;
+            border-top: #1a1918 solid 1px;
+            background-image: url(https://i.picsum.photos/id/684/3872/2178.jpg?hmac=_kCER0s1iGCf3tNMsJPkghB8wokudDiVHCbS-npOst8);
         }
 
         #content {
-            color: #CCC;
-            background-color: rgb(12, 12, 12);
-            width: 800px;
+            background-color: rgba(250, 246, 246, 0.9);
+            color: #1a1918;
+            width: 100%;
             height: 500px;
-            margin: 0px auto;
-            margin-top: 50px;
-            padding: 20px 60px;
-            border-radius: 20px;
+            text-align: center;
+            margin: 40px auto 0px auto;
+            padding-bottom: 100px;
+            border-bottom: #666 solid 2px;
+            border-top: #DDD solid 2px;
         }
 
         #content h1 {
-            color: #21609b;
-            margin: 0px;
+            font-family: "Klavika Web Bold Condensed";
+            color: #DDD;
+            background-color: #1a1918;
+            padding: 8px;
+            margin: 0px auto 50px auto;
+        }
+        hr{
+            border-top: #F00 solid 1px;
+            width: 30%;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -103,31 +132,45 @@
             <li><a href="snow_effect3.html">Sneeuw effect 2</a></li>
         </ul>
     </nav>
-    <div id="divSnow"
-        style="background-image:url(https://i.picsum.photos/id/724/5472/3648.jpg?hmac=HumH1kM_MX4ch7BLclcLo6g7aQsaObi-kzKAvcJPHoQ);">
+    <div id="divSnow">
     </div>
-    <div class="button"><button id="weer">Sneeuwverwachting</button></div>
+    <div class="text">
+        <button id="start">let it snow</button> 
+        <button id="stop">snow stopper</button>
+        <button id="dicht">the end</button>
+    </div>
     <div id="content">
-        <h1>Sneeuwverwachting</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
-            inventore?
-            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        <h1>Sneeuw Effect</h1>
+        <p>
+            WebSnowjq.Js is a jQuery plugin made using HTML5 and javascript
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat eveniet distinctio numquam
-            inventore?
-            Amet reprehenderit culpa pariatur, ab totam voluptas quas optio ea sunt beatae libero voluptatum veritatis!
+        <p> to create a virtual snow fall on a web page.
         </p>
+        <p>
+            WebSnowjq.Js is compatible with all browsers supporting HTML5.
+        </p>
+        <p> No effort is required to integrate
+            WebSnowjq.js in a website.
+        </p>
+        <hr>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.7.1.js"></script>
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/Websnowjq.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#divSnow").websnowjq({ snowFlakes: 100 })
-            $("#weer").focus(function () {
-                $("#divSnow").hide(800)
-            });
-        });
+$(document).ready(function(){
+  $("#start").focus(function(){
+            $("#divSnow").websnowjq({ snowFlakes: 60 });
+            $("#divSnow").websnowjq({ snowFlakes: 40 });
+            $("#divSnow").show(1200);
+  });
+      $("#stop").focus(function(){
+    location.reload();
+  });
+    $("#dicht").focus(function () {
+    $("#divSnow").hide(1200);
+    });
+
+});
     </script>
 </body>
 

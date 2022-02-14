@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQueryPromotion</title>
-
-
-    <link href="css/jquery-gallery.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="css/jquery-gallery.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -22,18 +20,15 @@
                 <h1 class="hero-image-title">
                     <img id="fotosola" src="images/jquery-4.svg" alt="logo"> jQuery
                 </h1>
-                <a href="#" class="popup_open btn">CLICK ME</a>
+                <a href="#" class="popup_open btn pulsate">CLICK ME</a>
             </div>
         </aside>
     </article>
-
-
     <section id="popup">
         <img src="images/Logo_jQuery.svg.png" alt="">
 
     </section>
     <div class="maincontainer">
-
         <div class="container">
             <div data-gallery="simple" data-loop="true" data-interval="2" id="div">
                 <figure id="image-1">
@@ -55,15 +50,14 @@
                     <a href="#image-4"></a>
                 </nav>
             </div>
-
         </div>
+
         <div class="container">
             <hr>
         </div>
 
         <div class="container">
             <div class="accordioncontainer">
-
                 <div class="box-container clearfix">
                     <div>
                         <p>j</p>
@@ -84,34 +78,37 @@
                         <p>y</p>
                     </div>
                 </div>
-
-                <h2>jQuery, Wat is het?</h2>
-                <div id="accordion">
-                    <h3>Betekenis: jQuery</h3>
-                    <div class="inhoud-1"></div>
-                    <h3>Waar wordt jQuery voor gebruikt?</h3>
-                    <div class="inhoud-2"></div>
-                    <h3>jQuery plug-ins?</h3>
-                    <div class="inhoud-3"></div>
-                    <h3>Voorbeelden van plug-ins</h3>
-                    <div>
-                        <div class="inhoud-4"></div>
-                        <input id="knop_toon" type="button" value="Toon voorbeeld slider" />
-                    </div>
-                    <h3>jQuery AJAX?</h3>
-                    <div class="inhoud_area">
-                        <div class="inhoud-5"></div>
-                        <div id="contentarea">
-                            <button id="content1">Voorbeeld van AJAX</button>
-                        </div>
-                    </div>
-                    <h3>Wat is JSON?</h3>
-                    <div class="inhoud-6"></div>
-                </div>
             </div>
-            <hr>
         </div>
+
         <div class="container">
+            <h2>jQuery, Wat is het?</h2>
+            <div id="accordion">
+                <h3>Betekenis: jQuery</h3>
+                <div class="inhoud-1"></div>
+                <h3>Waar wordt jQuery voor gebruikt?</h3>
+                <div class="inhoud-2"></div>
+                <h3>jQuery plug-ins?</h3>
+                <div class="inhoud-3"></div>
+                <h3>Voorbeelden van plug-ins</h3>
+                <div>
+                    <div class="inhoud-4"></div>
+                    <input id="knop_toon" type="button" value="Toon voorbeeld slider" />
+                </div>
+                <h3>jQuery AJAX?</h3>
+                <div class="inhoud_area">
+                    <div class="inhoud-5"></div>
+                    <div id="contentarea">
+                        <button id="content1">Voorbeeld van AJAX</button>
+                    </div>
+                </div>
+                <h3>Wat is JSON?</h3>
+                <div class="inhoud-6"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <hr>
             <section class="show_hide">
                 <ul class="gallery-slideshow">
                     <li><img src="images/foto1.jpg"></li>
@@ -129,17 +126,19 @@
                 <div id="remote">
                     <h2>Effecten Met jQuery</h2>
                     <ul>
-                        <li><a href="water_effect3.html" target="_blank" class="pulsate">Water Effect Met WebGL</a></li>
-                        <li><a href="water_effect4.html" target="_blank" class="pulsate">Water Effect Met WebGL</a></li>
-                        <li><a href="snow_effect2.html" target="_blank" class="pulsate">Sneeuw Effect Met jQ</a></li>
-                        <li><a href="snow_effect3.html" target="_blank" class="pulsate">Sneeuw Effect Met jQ</a></li>
+                        <li><a href="water_effect3.html" target="_blank" class="pulsate btn">Water Effect Met WebGL</a>
+                        </li>
+                        <li><a href="water_effect4.html" target="_blank" class="pulsate btn">Water Effect Met WebGL</a>
+                        </li>
+                        <li><a href="snow_effect2.html" target="_blank" class="pulsate btn">Sneeuw Effect Met jQ</a>
+                        </li>
+                        <li><a href="snow_effect3.html" target="_blank" class="pulsate btn">Sneeuw Effect Met jQ</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="bubble">
                     <div id="divSnow"></div>
-                    <div class="tekst">
-                        My Bubble 2022
-                    </div>
+
                 </div>
 
                 <div class="water">
@@ -150,18 +149,20 @@
 
         <!-- eind html Anton -->
         <div class="container trigger-header">
-
             <h2 class="trigger">Geschiedenis</h2>
             <div id="slide-in">
-                <p>jQuery is oorspronkelijk gemaakt in januari 2006 in BarCamp NYC door John Resig, beïnvloed door de
+                <p>jQuery is oorspronkelijk gemaakt in januari 2006 in BarCamp NYC door John Resig, beïnvloed door
+                    de
                     eerdere
                     cssQuery-bibliotheek van Dean Edwards. Het wordt momenteel onderhouden door een team van
-                    ontwikkelaars onder leiding van Timmy Willison (met de jQuery selector-engine, Sizzle, onder leiding
+                    ontwikkelaars onder leiding van Timmy Willison (met de jQuery selector-engine, Sizzle, onder
+                    leiding
                     van
                     Richard Gibson).</p>
                 <p>jQuery was oorspronkelijk gelicentieerd onder de CC BY-SA 2.5 en werd in 2006 opnieuw in licentie
                     gegeven
-                    aan de MIT-licentie. Eind 2006 kreeg het een dubbele licentie onder GPL- en MIT-licenties. Omdat dit
+                    aan de MIT-licentie. Eind 2006 kreeg het een dubbele licentie onder GPL- en MIT-licenties. Omdat
+                    dit
                     tot enige verwarring leidde, werd de GPL in 2012 geschrapt en wordt deze nu alleen gelicentieerd
                     onder
                     de
@@ -169,43 +170,54 @@
 
                 <h3>populariteit</h3>
 
-                <p> In 2015 werd jQuery gebruikt op 62,7% van de top 1 miljoen websites (volgens BuiltWith) en 17% van
+                <p> In 2015 werd jQuery gebruikt op 62,7% van de top 1 miljoen websites (volgens BuiltWith) en 17%
+                    van
                     alle
                     internetwebsites.
                     In 2017 werd jQuery gebruikt op 69,2% van de top 1 miljoen websites (volgens Libscore).
                     In 2018 werd jQuery gebruikt op 78% van de top 1 miljoen websites.
-                    In 2019 werd jQuery gebruikt op 80% van de top 1 miljoen websites (volgens BuiltWith), en 74,1% van
+                    In 2019 werd jQuery gebruikt op 80% van de top 1 miljoen websites (volgens BuiltWith), en 74,1%
+                    van
                     de
                     top 10 miljoen (per W3Techs).
-                    Vanaf april 2021 wordt jQuery gebruikt door 77,8% van de top 10 miljoen websites (volgens W3Techs).
+                    Vanaf april 2021 wordt jQuery gebruikt door 77,8% van de top 10 miljoen websites (volgens
+                    W3Techs).
                 </p>
-                <p>jQuery is de beste manier om je website extra functionaliteiten te geven en op te fleuren met zelf
+                <p>jQuery is de beste manier om je website extra functionaliteiten te geven en op te fleuren met
+                    zelf
                     geschreven codes en plugins.
                     Daarom is het belangrijk om dit goed onder de knie te krijgen.
-                    Je kan dit doen door zelf studie of een van de opleidingen die worden aangeboden.</p>
+                    Je kan dit doen door zelf studie of een van de opleidingen die worden aangeboden.
+                </p>
             </div>
         </div>
+
         <div class="container">
             <hr>
             <div class="con">
                 <h3>Wil je jQuery leren?</h3>
                 <p>Schrijf je dan hier in</p>
                 <div class="animatie">
-                    <button onclick="window.location.href='form.html'" class="animatie_knop">Leer Jquery</a></button>
+                    <button onclick="window.location.href='form.html'" class="animatie_knop">Leer
+                        jQuery</button>
+                </div>
+                <div class="buttons"> <a href="https://www.cvodeverdieping.be/cursussen/jquery?klas=9727"
+                        class="buttons btn pulsate" target="b_blank">CVO de Verdieping</a> <a
+                        href="https://www.vschool.be/cursus/jquery/" class="buttons btn pulsate"
+                        target="b_blank">vSchool</a>
                 </div>
             </div>
         </div>
+
         <!-- html Daniel -->
         <footer class="site-footer">
-
             <div class="contfooter">
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
                         <h6>JQUERY <div class="underline"><span></span></div>
                         </h6><br>
-                        <p class="text-justify"></p> informatieve en promotionele website over Jquery, laatste werk
-                        voor
-                        de jQuery-klasse, gebruik van de verschillende jQuery-eigenschappen</p>
+                        <p class="text-justify"> Informatieve en promotionele website over Jquery, eindopdracht
+                            voor de jQuery-klasse, gebruik van de verschillende jQuery-eigenschappen</p>
                     </div>
 
                     <div class="col-xs-6 col-md-3">
@@ -247,6 +259,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
 
         </footer>
     </div>
@@ -254,21 +267,20 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js">
     </script>
-    <script src="js/jquery.simple-gallery.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="dist/jquery.random-fade-in.js"></script>
-    <script src="js/jquery-gallery.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js">
     </script>
     <script src="js/danieljq.js"></script>
     <script src="js/jquery.ripples.js"></script>
     <script src="js/Websnowjq.js"></script>
     <script src="js/jquery.pulsate.js"></script>
+    <script src="js/jquery-gallery.js"></script>
     <script>
         $(document).ready(function () {
 
-            //begin code Christof//
+            //begin code Christof
 
             $("div.inhoud-1").load("inhoud/tekst1.txt");
             $("div.inhoud-2").load("inhoud/tekst2.txt");
@@ -278,6 +290,7 @@
             $("div.inhoud-6").load("inhoud/tekst6.txt");
 
             $('.box-container').randomFadeIn('slow');
+
             $("#accordion").accordion({
                 icons: {
                     "header": "ui-icon-circle-triangle-s",
@@ -336,7 +349,7 @@
                 .on("mouseenter", function () {
                     $(this).stop().animate({
                         width: "400px",
-                        height: "80px"
+                        height: "80px",
                     });
                     $(this).css("background-color", "purple");
                 })
@@ -356,7 +369,7 @@
                     $("#slide-in").stop().delay(10000).fadeOut();
                 });
 
-            //einde code Christof//
+            //einde code Christof
 
             //begin code Daniel
             $('#popup').popup({

@@ -11,33 +11,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/lumen/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.treeSelection.css">
 
-
 </head>
 
-<body>
+<body style="background-color: #3366cc;">
     <div class="container">
         <h1>Inschrijvings formulier</h1>
-        <form>
-            <p><label class="label" for="voornaam">Voornaam</label>
-                <input class="tekstveld" type="text" name="voornaam" id="voornaam" placeholder="Voornaam">
+        <form id="formulier" method="post">
+            <p><label class="label" for="voornaam">Voornaam <span>*</span> </label>
+                <input class="tekstveld" type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required>
             </p>
-            <p><label class="label" for="achternaam">Achternaam</label>
-                <input class="tekstveld" type="text" name="achternaam" id="achternaam" placeholder="Achternaam">
+            <p><label class="label" for="achternaam">Achternaam <span>*</span> </label>
+                <input class="tekstveld" type="text" name="achternaam" id="achternaam" placeholder="Achternaam"
+                    required>
             </p>
-            <p><label class="label" for="email">E-mail</label>
-                <input class="tekstveld" type="email" name="email" id="email" placeholder="voorbeeld@blabla.com">
+            <p><label class="label" for="email">E-mail <span>*</span></label>
+                <input class="tekstveld" type="email" name="email" id="email" placeholder="voorbeeld@blabla.com"
+                    required>
             </p>
             <p><b>selecteer waar en wanneer je jQuery wil leren</b></p>
             <p>-plaats van de cursus</p>
-            <select name="selecteer1" class="custom-select">
+            <select name="selecteer1" class="custom-select" required>
                 <optgroup label="plaats van de cursus">
                     <option value="to">Thuis/online</option>
                     <option value="os">Op school</option>
                 </optgroup>
             </select><br><br>
             <p>-Start-/einddatum van de cursus</p>
-            <select name="selecteer2" class="custom-select">
-                <optgroup label="datum van de cursus" multiple>
+            <select name="selecteer2" class="custom-select" required>
+                <optgroup label="datum van de cursus">
                     <option value="sem1">1 september - 15 december</option>
                     <option value="sem2">10 januari - 25 maart</option>
                     <option value="sem3">2 mei - 27 juni</option>
@@ -45,28 +46,57 @@
             </select><br><br>
             <p><label for="bericht">Vragen/opmerkingen:</label></p>
             <textarea name="bericht" id="bericht" cols="70" rows="10"></textarea>
-            <p><input class="border-knop" type="button" value="Inschrijven"></p>
+            <p><span>*</span> Verplicht veld</p>
+            <p><a href="#dialogBox"></a><input class="border-knop" type="submit" value="Inschrijven"></p>
         </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.treeSelection.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
     <script>
+        //start code Christof
         $(document).ready(function () {
             $(function () {
                 $('select[name=selecteer1]').treeSelection();
                 $('select[name=selecteer2]').treeSelection();
             });
 
-            $(".border-knop").on("click", function () {
-                if (confirm("Bedankt voor je inschrijving. ->Klik op OK om terug te gaan naar de main site, klik op Cancel om terug te gaan naar google.")) {
+
+            $("#formulier").validate({
+                submitHandler: function (form) {
+                    alert("Bedankt voor je inschrijving!");
                     window.location.href = "index.html";
-                } else {
-                    window.location.href = "https:google.com";
+                },
+                rules: {
+                    voornaam: {
+                        required: true
+                    },
+                    achternaam: {
+                        required: true
+                    },
+                    email: {
+                        required: true
+                    },
+                },
+                messages: {
+                    voornaam: {
+                        required: "vul je voornaam in."
+                    },
+                    achternaam: {
+                        required: "vul je achternaam in aub."
+                    },
+                    email: {
+                        required: "voer een geldig email in."
+                    }
                 }
             });
+
         });
+
+        //einde code Christof
     </script>
 </body>
 

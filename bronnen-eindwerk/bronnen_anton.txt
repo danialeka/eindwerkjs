@@ -1,0 +1,17 @@
+
+Plugins:
+(water) https://www.jqueryscript.net/animation/jQuery-Plugin-For-Water-Ripple-Animation-ripples.html
+(sneeuw) http://technoplugin.com/WebSnow/documentation
+(pulsate) https://kilianvalkhof.com/jquerypulsate/
+
+=================================
+
+Inspiratie:
+https://tympanus.net/codrops/
+
+=================================
+
+Reference:
+https://www.w3schools.com/jquery/default.asp
+https://stackoverflow.com/
+https://api.jquery.com/
